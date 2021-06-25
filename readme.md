@@ -11,3 +11,30 @@ There are many odd behaviours this mod tries to work around, if you have any que
 - Many high-tech solutions to core issues with krunker.
 - High quality renders and artworks.
 - 6 months of work.
+#
+Credits (DQ):
+- Swat
+- Prof
+- Star
+- Twin
+- There
+- Ace
+- Lake
+- Talha
+- Aust
+
+#
+Special thanks:
+- Keybi
+- Penfold
+- Peanut
+- Solar
+- SITF
+- L0ser
+- 7fi
+- Octo
+- Employed salt
+- Marm
+- Graphite
+#
+![](https://media.discordapp.net/attachments/750128832698253394/835936765281828965/snowman.png)
