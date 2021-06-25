@@ -12,6 +12,9 @@ There are many odd behaviours this mod tries to work around, if you have any que
 - High quality renders and artworks.
 - 6 months of work.
 #
+## 12 Minutes of DQ Battleboats gameplay
+[![12 Minutes of DQ Battleboats gameplay](http://img.youtube.com/vi/nfcnpwCJRIs/0.jpg)](https://youtu.be/nfcnpwCJRIs "12 Minutes of DQ Battleboats gameplay")
+#
 Credits (DQ):
 - Swat
 - Prof
