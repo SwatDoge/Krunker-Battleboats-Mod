@@ -1,0 +1,3005 @@
+/*
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$**$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$V..*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$F....V$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M......I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N:.......M$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*...VV...:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*...*$$V...*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*...:$$$$*...*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$V...:N$$$$$:...V$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M....M$$$$$$N:...F$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N:...:V******V*....M$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N:..................:N$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*.:***VVVVFFVVVV***:.*N$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N$$$$$$$$$$$$$$$$$$$$NN$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$MMMMMMMMMMMMMMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$................M$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$MMMM::::::::::::::::IMMM$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$....$$$$$$$$$$$$$$$$:...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$NNNM::::$$$$$$$$$$$$$$$$*:::FNNN$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$NNMIFFVVV***I$$$$$$$$$$$$$$$$N....$$$$$$$$$$$$$$$$$$$$$$$$:...F$$$$M***VVVVFIMNN$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$FVVVV****:::.............V$$$$$$$$$$$$$$$$$N....$$$$$$$$$$$$NMMM$$$$$$$$:...VMMM$$F.............:::****VVVVFN$$$$$$$$$
+$$$$$$$$$$I*.............:::*:....V$$$$$$$$$$$$$$$$$$N....$$$$$$$$$$$$:...N$$$F::*:.......I$$F....:*:::.............*I$$$$$$$$$$
+$$$$$$$$$$$$M*.....VMNN$$$$$$:...V$$$$NNNN$$$$$$$$$$$N....$$$$$$$V$$$$*:::N$$$F..**:::::::FNNNV...:N$$$$$NNMV:....*M$$$$$$$$$$$$
+$$$$$$$$$$$$$$N*....:F$$$$$$*...V$$$$I...:$$$$$$$$$$$N....$$$$$$F.F$$$$$$$$$$$F...:::::::**...FV...*$$$$$$F*....*M$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$NV....:V$$$N...:$$NNNF:::*NNNN$$$$NNNM....NNNN$$:.*$$$$$$$$$$$F......:****:...F$:...I$$$F:....*N$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$NV:...:V$*...V$M...*$$$M...:$$$$............$I.*V$$$$$$$V::::......**.......F$V...*$V:....VN$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$NV:...::...N$M...*$$$M::::NNNN::::::::::::$*:NNN$$$$$$I**********V*:::::::I$N....:...:VN$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$V:.....:$$M...*$$$$$$$N....$$$$$$$$$$$$$:VVFN$$$$$$$$$$:.......F$$$$$$$$$$*.....:V$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$V:...*$$M...*$$$$$$$N::::$$$$$$$$$$$$M.F**$$$$$$$$$$$*:::....F$$$$$$$$$$*...:V$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$F:.*$$M...*$$$$$$$$$$$$$$$$$$$$$$$$F.M*.N$$$$$$$$$$$$$$:...F$$$$$$$$$$*.:V$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$IV$$M:::*NNN$$$$$$$$$$$$$$NN$$$$$V.NFVM$$$$$$$$$$$$$$*:::FNNN$$$$$$$VF$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$I...:$$$$$$$$$$$N....$$$$*.$$*M$$$$$$$$$$$$$$$$$$*...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$I...:$$$$$$$$$$$N:..:$$$$*.$$*FF$$$$$$$$$$$$$$$$$*...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$I...:$$$$$$$$$$$$$$$$...I*.$VV:*$$$$$:...M$$$$$$$*...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$I...:$$$$$$$$$$$$$$$$...I:.$:..*$$$$$:...M$$$$$$$*...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M...:$$$$$$$$$$$$$$$$:.$:..*F....N$$$$$$$*...F$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M...:$$$$$$$$$$$$$$$$:.$:..*F....N$$$$$$$*...F$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$N...:$$$$$$$$$$$$:.$:..*$$$$$$$$$:...I$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$*V$$$$$$$$$$$N$$$$$$$$N....$$$$$$$$$$$$:.$:..*$$$$$$$$$:...I$$$$$$$$N$$$$$$$$$$$F*$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$V.:F$$$$$$$$$*:V$$$$$$$$$$$...:$$$$$$$$:.$:..*$$$$$:...M$$$$$$$$$$F:*$$$$$$$$$F*.*$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$I...:V$$$$$$$...*I$$$$$$$$$...:$$$$$$$$:.$:..*$$$$$:...M$$$$$$$$M*...N$$$$$$F*...V$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$M....VVVM$$$V.....*F$$$$$$$$$$N:......M:.$:..*F....N$$$$$$$$$$F*.....V$$$MVVV....I$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$V*:.....N*VVV$$:.......:VM$$$$$$$N.......MVVI:..*V....N$$$$$$$NV:.......:$$VVV*N:....:*V$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$V:....*V...*IN:..:NV:....:VI$$$$$$$$$$$$$:.....*$$$$$$$$$$IV:....:VN:..:MM*...VV.....V$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$N*...M:.....:*VVV$$$MV:.....:*VIN$$$$$$$VVVVVVV$$$$$$$N*.....:*M$$$FVVV:.....:N...*N$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$M**M.......:V**VN$$$$MV*.......:*NVVVVVVVVVVVVVVVVVVN...*VI$$$$NF***:.......F**I$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$*......:NVNF..**VIN$$N*......*VN$$VVVVVVVVVI*......*N$$$IV*:*:.NI.:......*$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$*.....*N*IV.*NV$:..:**VVVVVV$$$$$$VM:...*IF$$$FVVVVV**::**V.*N::INVM:....*$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$NV:.*$VMV.:N*MV.........::::***VVVVVVVVVV****:....*VV::NVN:.*N:.VIVN.:VN$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$NVVV*.*N*MV.........IFV.:F.:V:*..**::**........:.IF.*$NI:.*N:.*VFN$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$:*VV**MNV..........NV..VM.*$V$.*N*.*$:.........:$V..VNVM:.*VVV*:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$V....:*VI*:.........*N..M*.V$$M.*M..:$V:.........MVV:.V*VVV*:....V$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$:....:VI$$$$MV**:.:FM*.:$:.IV$V.*N...NV..........*VVVI$$$$MV:....:$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$M..:VM$$$$$$$$$$$$NIVV***V..V*V*.:MV:.VVV.::**VVIN$$$$$$$$$$$$MV:..F$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$FVN$$$$$$$$$$$$$$$$$$$$$$$$$NNNFIVVVVVII$$$$$$$$$$$$$$$$$$$$$$$$$NVV$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$VM:...*FV$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$VM:...*FV$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$VM:...*FV$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*M:...:M*N$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$V*V.....I*V$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$V*F*****I*V$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$I*VVVVVVV*F$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+*/
+
+/*
+    ---- Color pallette for this mod: ---- 
+    mint: #63FFB9       - Warning/enemy affiliation
+    tomato: #FF442B     - Caution/neutral affiliation
+    ginger: #ffef63    - OK/friendly affiliaiton
+
+    these are receipe's frequently used in the dishes of the countries our maps take place in ;)
+*/
+
+:root{
+    /*default colors*/
+    --mint: #63FFB9;
+    --tomato: #FF442B;
+    --ginger: #ffef63;
+
+    /*clipping for healthbars*/
+    --shipclipping: path("M168.118 1.386 C 164.430 3.635,166.785 8.349,171.603 8.360 C 172.493 8.362,172.822 8.927,172.822 10.453 C 172.822 12.294,172.582 12.544,170.805 12.544 C 168.696 12.544,165.796 18.547,161.969 30.836 L 160.721 34.843 147.259 34.843 L 133.798 34.843 133.798 41.812 L 133.798 48.780 123.345 48.780 L 112.892 48.780 112.892 54.355 L 112.892 59.930 109.408 59.930 L 105.923 59.930 105.923 57.143 L 105.923 54.355 98.258 54.355 L 90.592 54.355 90.592 57.143 L 90.592 59.930 81.533 59.930 L 72.474 59.930 72.474 56.558 C 72.474 51.595,65.988 49.842,57.964 52.637 C 55.135 53.623,54.531 53.580,48.006 51.930 C 44.185 50.964,40.523 50.191,39.868 50.211 C 38.355 50.257,46.455 53.415,51.742 54.840 C 55.441 55.838,55.749 56.075,55.749 57.925 L 55.749 59.930 27.875 59.930 C 12.544 59.930,0.000 60.167,0.000 60.456 C 0.000 60.746,14.583 68.272,32.406 77.181 L 64.812 93.380 232.406 93.380 L 400.000 93.380 400.000 82.927 L 400.000 72.474 360.279 72.474 C 334.262 72.474,320.557 72.233,320.557 71.777 C 320.557 71.394,319.930 71.080,319.164 71.080 C 318.397 71.080,317.770 70.767,317.770 70.383 C 317.770 70.000,317.143 69.686,316.376 69.686 C 315.610 69.686,314.983 69.373,314.983 68.990 C 314.983 68.606,314.355 68.293,313.589 68.293 C 312.822 68.293,312.195 67.979,312.195 67.596 C 312.195 67.213,311.568 66.899,310.801 66.899 C 310.035 66.899,309.408 66.585,309.408 66.202 C 309.408 65.819,308.780 65.505,308.014 65.505 C 307.247 65.505,306.620 65.192,306.620 64.808 C 306.620 64.425,305.993 64.111,305.226 64.111 C 304.460 64.111,303.833 63.798,303.833 63.415 C 303.833 63.031,303.206 62.718,302.439 62.718 C 301.672 62.718,301.045 62.404,301.045 62.021 C 301.045 61.638,300.418 61.324,299.652 61.324 C 298.885 61.324,298.258 61.010,298.258 60.627 C 298.258 60.244,297.631 59.930,296.864 59.930 C 295.587 59.930,295.470 59.466,295.470 54.355 L 295.470 48.780 292.285 48.780 C 287.054 48.780,287.108 48.974,287.108 30.363 C 287.108 19.877,286.856 13.937,286.411 13.937 C 285.970 13.937,285.714 19.048,285.714 27.875 C 285.714 36.702,285.459 41.812,285.017 41.812 C 284.634 41.812,284.321 43.066,284.321 44.599 L 284.321 47.387 275.261 47.387 L 266.202 47.387 266.202 42.509 L 266.202 37.631 257.236 37.631 L 248.270 37.631 246.746 33.449 L 245.221 29.268 241.824 29.268 L 238.428 29.268 236.984 33.127 C 236.190 35.250,235.540 37.445,235.540 38.005 C 235.540 38.673,234.819 39.024,233.449 39.024 L 231.359 39.024 231.359 43.206 L 231.359 47.387 228.571 47.387 L 225.784 47.387 225.784 52.962 L 225.784 58.537 222.997 58.537 L 220.209 58.537 220.209 55.749 C 220.209 54.216,219.895 52.962,219.512 52.962 C 219.106 52.962,218.815 50.639,218.815 47.387 L 218.815 41.812 216.028 41.812 L 213.240 41.812 213.240 44.599 C 213.240 47.210,213.113 47.387,211.220 47.387 L 209.200 47.387 208.766 30.139 C 208.239 9.210,207.750 1.394,206.969 1.394 C 206.187 1.394,205.699 9.210,205.171 30.139 L 204.737 47.387 200.388 47.387 L 196.038 47.387 194.205 41.289 C 193.196 37.936,191.406 31.272,190.225 26.481 C 186.428 11.068,187.092 12.544,183.945 12.544 C 181.343 12.544,181.185 12.424,181.185 10.453 C 181.185 8.927,181.514 8.362,182.404 8.360 C 184.499 8.355,188.153 5.699,188.153 4.181 C 188.153 0.152,173.496 -1.892,168.118 1.386 ");
+}
+
+/* ----REMOVAL---- */
+
+/*ingame*/
+#killsIcon, #scoreCount > i, #deathsIcon, #streakIcon,
+#pingIcon, #ammoIcon, #timerIcon, #challIcon, #voiceDisplay, #hudClassIcon, .weapKey, #killCardMsg, 
+.kClvl, .kCFlag, #kCStat, #kCInfoS, #killCard > br, .newLeaderTeamScore, .newLeaderCounter, .newLeaderItem > i, 
+.leaderItem > i, #combatRecordLayout > #kdLayout ~ .crStat:first-child > .crLabel, #endLayout > .endSection > .endTitle,
+#modeLayout > .modeIcon, .kfMsg > span > span, #chatSwitchHolder, #hiddenClasses > div, 
+.tabBody > endSection, .teamTotalN0, .teamTotalN1, .teamWin1, #gameFundsLayout > .gfSection:nth-child(2),
+#tabHolder > div:nth-child(4), .tabBody > .endSection, #matchVoteHolder, #endTable > tbody > tr > td i,
+.ot-floating-button__front > button > svg, .endTableN > span, #tabHolder > .selected, #tabHolder > div:nth-child(3),
+#streamContainer > .streamItem:nth-child(4), #streamContainer > .streamItem:nth-child(5), 
+#menuItemContainer > .menuItem:not([onclick^="showWindow(1)"]){
+    display: none;
+}
+
+/*inmenu*/
+#spectButton, #phonePop, #policeButton, .strmIcn, #policeButton,
+#menuBtnRanked, #menuBtnHost, #termsInfo > .verticalSeparatorInline:nth-child(1), #termsInfo > .verticalSeparatorInline:nth-child(2), 
+.standout, #bubbleContainer, .lgn > span, #menuClassName,
+#menuClassSubtext, #chatHolder * > br, #customizeButton, #menuMiniProfilePic, #instructions,
+.leaderCounter, .streamName i, .menuItem > div.iconSettings, #curGameInfo {
+    display: none;
+}
+
+/* ----REMOVAL IMPORTANT---- */
+
+/*ingame*/
+#reloadMsg, #kdIcon, .headShotChatIcon{
+    display: none !important;
+}
+
+/*inmenu*/
+#mLevelCont, #menuServerInfoContainer ~ div, #menuServerInfoContainer ~ img, .krInfo, #seasonLabel, #signedInHeaderBar > .verticalSeparator, #menuClassNameTag, #mailContainer, .progressBar, #menuPingDisplay i, .youNewDiv{
+    display: none !important;
+}
+
+/*steam client removal*/
+#clientExit{
+    display: none !important;
+}
+
+/*steam client support*/
+.button, #signedOutHeaderBar, #signedInHeaderBar, .chatItem, #ammoDisplay, 
+#chatInput, #termsInfo, #headerRight, #killCard, #timerDisplay, #tlInfHold,
+#leaderDisplay, #newLeaderDisplay, .newLeaderContainer, #healthValue,
+#healthValueHolder, .menuItem, .kfItem, #menuItemContainer, #bottomLeftHolder,  
+#healthBar, .killFeed > div, #streamContainer, .topRightCounters > div, .topRightCounters > div::after,
+#chatList, #chatInputHolder{
+    color: white;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: unset !important;
+}
+
+/* ----HIDE---- */
+#igXPBar{
+    visibility: hidden;
+    max-width: 0;
+    max-height: 0;
+}
+
+/* ----FONTS---- */
+* {
+    text-shadow: none !important;
+    font-family: main_font;
+}
+
+.material-icons{
+    font-family: "Material Icons" !important;
+}
+
+/*remove ads*/
+#aHider, .endAHolder{
+    display: none;
+}
+
+@font-face{
+    font-family: 'main_font';
+    src: CSSFONT:ACESRegular;
+        
+    /*All credits for this font go to Gamingroach and Luneth22.*/
+    font-weight: normal;
+}
+
+/*Firefox specific support*/
+@supports (-moz-appearance: none) {
+    #braveWarning{
+        position: absolute;
+        transform: translateY(-70px);
+        font-size: 0;
+        display: block;
+    }
+
+    #braveWarning::after{
+        font-size: 19px;
+        color: var(--tomato);
+        content: "We have detected that you are using Firefox. You will encounter major css issues. Please switch to Google Chrome for the best experience." !important;
+    }
+
+    .classImgC, .pixelated{
+        image-rendering: crisp-edges;
+    }
+}
+
+/*chromium/clients/safari*/
+@supports not (clip-path: path("M1.1 1.2")){
+    #braveWarning{
+        position: absolute;
+        transform: translateY(-120px);
+        font-size: 0;
+        display: block;
+    }
+
+    #braveWarning::after{
+        font-size: 19px;
+        color: var(--tomato);
+        content: "We have detected that you are using Chromium/Safari or a client. You will encounter css issues. Please switch to Google Chrome for the best experience." !important;
+    }
+    
+    #subLogoButtons{
+        bottom: 50px !important;
+    }
+}
+
+/*brave*/
+    #braveWarning{
+        position: absolute;
+        transform: translateY(-50px);
+        font-size: 0;
+    }
+
+    #braveWarning::after{
+        font-size: 19px;
+        color: var(--tomato);
+        content: "We have detected that you are using Brave. You might encounter minor css issues. Please switch to Google Chrome for the best experience.";
+    }
+
+/* ---- INGAME UI ---- */
+
+    /* ---- Damage overlay ---- */
+
+    #cusDIV3{
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        font-size: 0 !important;
+        transform: unset !important;
+        display: block !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        background-image: CSSIMAGE:damage_overlay;
+        opacity: 0 !important;
+    }
+
+    #uiBase.onMenu > #gameUI > #customGUIHolder > #cusDIV3{
+        opacity: 0 !important;
+    }
+
+    /* ---- Between 200-150 health ---- */
+    #cusDIV3[data-text="200"],
+    #cusDIV3[data-text^="19"]:not([data-text="19"]),
+    #cusDIV3[data-text^="18"]:not([data-text="18"]),
+    #cusDIV3[data-text^="17"]:not([data-text="17"]),
+    #cusDIV3[data-text^="16"]:not([data-text="16"]),
+    #cusDIV3[data-text^="15"]:not([data-text="15"]){
+        opacity: 0.33 !important;
+    }
+
+    /* ---- Between 150 - 50 health ---- */
+    #cusDIV3[data-text^="14"]:not([data-text="14"]),
+    #cusDIV3[data-text^="13"]:not([data-text="13"]),
+    #cusDIV3[data-text^="12"]:not([data-text="12"]),
+    #cusDIV3[data-text^="11"]:not([data-text="11"]),
+    #cusDIV3[data-text^="10"]:not([data-text="10"]),
+    #cusDIV3[data-text="99"], 
+    #cusDIV3[data-text="98"],
+    #cusDIV3[data-text="97"], 
+    #cusDIV3[data-text="96"],
+    #cusDIV3[data-text="95"], 
+    #cusDIV3[data-text="94"],
+    #cusDIV3[data-text="93"], 
+    #cusDIV3[data-text="92"],
+    #cusDIV3[data-text="91"], 
+    #cusDIV3[data-text="90"],
+    #cusDIV3[data-text="89"], 
+    #cusDIV3[data-text="88"],
+    #cusDIV3[data-text="87"], 
+    #cusDIV3[data-text="86"],
+    #cusDIV3[data-text="85"], 
+    #cusDIV3[data-text="84"],
+    #cusDIV3[data-text="83"], 
+    #cusDIV3[data-text="82"],
+    #cusDIV3[data-text="82"], 
+    #cusDIV3[data-text="81"],
+    #cusDIV3[data-text="80"], 
+    #cusDIV3[data-text="79"],
+    #cusDIV3[data-text="78"], 
+    #cusDIV3[data-text="77"],
+    #cusDIV3[data-text="76"], 
+    #cusDIV3[data-text="75"],
+    #cusDIV3[data-text="74"], 
+    #cusDIV3[data-text="73"],
+    #cusDIV3[data-text="72"], 
+    #cusDIV3[data-text="71"],
+    #cusDIV3[data-text="70"], 
+    #cusDIV3[data-text="69"],
+    #cusDIV3[data-text="68"], 
+    #cusDIV3[data-text="67"],
+    #cusDIV3[data-text="66"], 
+    #cusDIV3[data-text="65"],
+    #cusDIV3[data-text="64"], 
+    #cusDIV3[data-text="63"],
+    #cusDIV3[data-text="62"], 
+    #cusDIV3[data-text="61"],
+    #cusDIV3[data-text="60"], 
+    #cusDIV3[data-text="59"],
+    #cusDIV3[data-text="58"], 
+    #cusDIV3[data-text="57"],
+    #cusDIV3[data-text="56"], 
+    #cusDIV3[data-text="55"],
+    #cusDIV3[data-text="54"], 
+    #cusDIV3[data-text="53"],
+    #cusDIV3[data-text="52"], 
+    #cusDIV3[data-text="51"]{
+        opacity: 0.66 !important;
+    }
+
+    /* ---- Below 50 health ---- */
+    #cusDIV3[data-text="50"],
+    #cusDIV3[data-text="49"],
+    #cusDIV3[data-text="48"],
+    #cusDIV3[data-text="47"],
+    #cusDIV3[data-text="46"],
+    #cusDIV3[data-text="45"],
+    #cusDIV3[data-text="44"],
+    #cusDIV3[data-text="43"],
+    #cusDIV3[data-text="42"],
+    #cusDIV3[data-text="41"],
+    #cusDIV3[data-text="40"],
+    #cusDIV3[data-text="39"],
+    #cusDIV3[data-text="38"],
+    #cusDIV3[data-text="37"],
+    #cusDIV3[data-text="36"],
+    #cusDIV3[data-text="35"],
+    #cusDIV3[data-text="34"],
+    #cusDIV3[data-text="33"],
+    #cusDIV3[data-text="32"],
+    #cusDIV3[data-text="31"],
+    #cusDIV3[data-text="30"],
+    #cusDIV3[data-text="29"],
+    #cusDIV3[data-text="28"],
+    #cusDIV3[data-text="27"],
+    #cusDIV3[data-text="26"],
+    #cusDIV3[data-text="25"],
+    #cusDIV3[data-text="24"],
+    #cusDIV3[data-text="23"],
+    #cusDIV3[data-text="22"],
+    #cusDIV3[data-text="21"],
+    #cusDIV3[data-text="20"],
+    #cusDIV3[data-text="19"],
+    #cusDIV3[data-text="18"],
+    #cusDIV3[data-text="17"],
+    #cusDIV3[data-text="16"],
+    #cusDIV3[data-text="15"],
+    #cusDIV3[data-text="14"],
+    #cusDIV3[data-text="13"],
+    #cusDIV3[data-text="12"],
+    #cusDIV3[data-text="11"],
+    #cusDIV3[data-text="10"],
+    #cusDIV3[data-text="9"],
+    #cusDIV3[data-text="8"],
+    #cusDIV3[data-text="7"],
+    #cusDIV3[data-text="6"],
+    #cusDIV3[data-text="5"],
+    #cusDIV3[data-text="4"],
+    #cusDIV3[data-text="3"],
+    #cusDIV3[data-text="2"],
+    #cusDIV3[data-text="1"]{
+        opacity: 1 !important;
+    }
+
+    /*---- Health display ----*/
+    .hpBSeg{
+        opacity: 0.6;
+        /*changes the shape of the healthbar by clipping out the content of an SVG*/
+        clip-path: var(--shipclipping);
+        -webkit-clip-path: var(--shipclipping);
+        -moz-clip-path: var(--shipclipping);
+        min-width: 101%; /*If the health is below 10%, the full background is stretched to properly display the healthbar flickering (see below)*/
+        background-color: transparent; /*make place for animation*/
+
+        /*If the health is below 10%, an animation plays that make the healthbar blink*/
+        animation-name: low_health_warn;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*If health is between 100%-60%*/
+    .hpBSeg[style^="width:100"], 
+    .hpBSeg[style^="width:9"]:not(.hpBSeg[style^="width:9%"]):not(.hpBSeg[style^="width:9."]),
+    .hpBSeg[style^="width:8"]:not(.hpBSeg[style^="width:8%"]):not(.hpBSeg[style^="width:8."]), 
+    .hpBSeg[style^="width:7"]:not(.hpBSeg[style^="width:7%"]):not(.hpBSeg[style^="width:7."]), 
+    .hpBSeg[style^="width:6"]:not(.hpBSeg[style^="width:6%"]):not(.hpBSeg[style^="width:6."]){
+        background-color: var(--mint) !important;
+        min-width: unset;
+    }
+
+    /*If health is between 59.999%-40%*/
+    .hpBSeg[style^="width:5"]:not(.hpBSeg[style^="width:5%"]):not(.hpBSeg[style^="width:5."]),
+    .hpBSeg[style^="width:4"]:not(.hpBSeg[style^="width:4%"]):not(.hpBSeg[style^="width:4."]){
+        background-color: var(--ginger) !important;
+        min-width: unset;
+    }
+
+    /*If health is between 39.999%-10%*/
+    .hpBSeg[style^="width:3"]:not(.hpBSeg[style^="width:3%"]):not(.hpBSeg[style^="width:3."]),
+    .hpBSeg[style^="width:2"]:not(.hpBSeg[style^="width:2%"]):not(.hpBSeg[style^="width:2."]),
+    .hpBSeg[style^="width:1"]:not(.hpBSeg[style^="width:1%"]):not(.hpBSeg[style^="width:1."]):not(.hpBSeg[style^="width:100"]){
+        background-color: var(--tomato) !important;
+        min-width: unset;
+    }
+
+    #healthValueHolder{
+        background-color: transparent !important;
+        position: absolute;
+        left: 125px;
+        top: 50px;
+        z-index: 1;
+    }
+
+    #healthValue{
+        font-size: 35px;
+    }
+
+    .healthBarSeg{
+        width: 400px;
+        height: 93.65px;
+        background-color: transparent !important;
+    }
+
+    #healthBar{
+        width: 400px;
+        height: 93.65px;
+        background-color: rgba(255, 255, 255, 0.1);
+        /*Background of the boat healthbar*/
+        clip-path: var(--shipclipping);
+        -webkit-clip-path: var(--shipclipping);
+        -moz-clip-path: var(--shipclipping);
+    }
+
+    
+    /* ---- Objective text ---- */
+    #gameMessage{
+        text-transform: capitalize;
+        top: 10px;
+        font-size: 30px;
+        width: 230px;   /*allow the text to warp by setting the width to be smaller then the full sentence of text*/
+        left: calc(50% - 105px);
+    }
+
+    /* ---- Score display ---- */
+    #teamScores{
+        position: fixed;
+        left: calc(50% - 200px);
+        background-color: transparent;
+        top: 40px;
+        width: 400px;
+        display: flex !important;
+        justify-content: space-between;
+    }
+
+    #teamScores > .tScore:first-child{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 50px;
+        margin-left: 0;
+    }
+
+    .tScore{
+        flex: 1;
+        margin-left: 50px;
+    }
+
+    .tScoreC.you{
+        background-color: var(--mint);
+    }
+
+    .tScoreC{
+        background-color: var(--tomato);
+        margin-left: 10px;
+    }
+
+    .tScoreC.you + .tScoreT{
+        color: var(--mint);
+    }
+
+    .tScoreT{
+        font-size: 30px;
+        color: var(--tomato);
+    }
+
+    #tScoreC1{
+        align-self: center;
+    }
+
+    /* ---- Network lag message ---- */
+    #networkLag{
+        position: fixed;
+        top: 300px;
+    }
+
+    /* ---- Killfeed ---- */
+    #killFeed{
+        left: 20px;
+        bottom: 150px;
+        font-size: 20px;
+        position: fixed !important;
+    }
+
+    .kfItem{
+        width: 100%;
+    }
+
+    /*Headshots are being removed in the "REMOVE" category.*/
+
+    /*Removes clantags from the killfeed*/
+    .kfMsg, .kfItem, #killFeed > div{
+        background-color: transparent !important;
+    }
+
+    /*If the person is "You", turn white into mint*/
+    .kfMsg > span[style="color:#fff"]{
+        color: var(--mint) !important;
+    }
+
+    /*If the person is a friendly, turn green into white*/
+    .kfMsg > span[style="color:#9eeb56"]{
+        color: white !important;
+    }
+
+    /*If the person is an enemy, turn white into tomato*/
+    .kfMsg > span[style="color:#eb5656"]{
+        color: var(--tomato) !important;
+    }
+
+    /*killfeed icon specifics*/
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_3"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_3"]{
+        content: CSSIMAGE:weapon_3_cwis;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_4"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_4"]{
+        content: CSSIMAGE:weapon_4_autocannon;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_9"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_9"]{
+        content: CSSIMAGE:weapon_9_missiles;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_11"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_11"]{
+        content: CSSIMAGE:weapon_11_navalcannon;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_14"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_14"]{
+        content: CSSIMAGE:weapon_14_torpedo;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_15"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/weapons/icon_15"]{
+        content: CSSIMAGE:weapon_15_heavycannons;
+    }
+
+    .kfMsg > img[src^="https://assets.krunker.io/textures/melee/icon_0"],
+    .chatMsg > img[src^="https://assets.krunker.io/textures/melee/icon_0"]{
+        animation-name: repair_kill;
+        animation-duration: .32.5s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    /* ---- Ammo and weapons ---- */
+    #ammoDisplay:not([style^="background-size: 0%"])::after{ /*background-size becomes non-zero when reloading.*/
+        transition: background-image 0.5s;
+        -webkit-transition: background-image 0.5s;
+
+        background-size: 58px;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        align-self: flex-start;
+        display: block !important;
+        content: " ";
+        width: 180px;
+        height: 58px;
+        min-height: 58px;
+        position: absolute;
+        padding: 0 0;
+
+        /*Sequence rendered by DQ Corp, please contact us before using it.*/
+        animation-name: reloadIcon_animation;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    #ammoDisplay{
+        height: unset;
+        position: fixed;
+        left: calc(50% - 120px);
+        font-size: 40px;
+        width: 200px;
+        bottom: 90px;
+        background: transparent !important;
+        display: flex !important;
+        height: calc(50% - 98px);
+        align-items: flex-end;
+    }
+
+    #botRightHider{
+        display: grid !important;
+        place-items: center;
+        bottom: 15px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 73px;
+        overflow: hidden;
+    }
+
+    .weapItem{
+        margin-top: unset;
+    }
+
+    #ammoVal{
+        flex: 1;
+        text-align: end;
+        color: var(--mint) !important;
+    }
+
+    #ammoMax{
+        flex: 1;
+        text-align: start;
+    }
+
+    .weapIcon{
+        margin-right: 0 !important;
+    }
+
+    .weapIcon[style^="opacity: 1"], .weapIcon[style^="opacity:1"]{
+        border-bottom: 3px solid white;
+    }
+
+    /* ---- Peace of shit cross for whne youre holding the repair tool ---- */
+    #weapDisplay{
+        display: inline-flex !important;
+        position: static;
+        justify-content: space-evenly;
+    }
+
+    #weapIconMel:not([style^="opacity: 1"]):not([style^="opacity:1"]){
+        content: CSSIMAGE:knife_selected;
+        opacity: 0.7;
+    }
+
+    #weapDisplay > .weapItem:last-child{
+        width: 140px;
+        height: 70px;
+    }
+
+    #weapDisplay > .weapItem:last-child::after{
+        background-image: CSSIMAGE:knife_selected;
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: " ";
+        display: block;
+        border-bottom: 3px solid white;
+        position: absolute;
+        width: 140px;
+        height: 70px;
+    }
+
+    #weapIconMel[style^="opacity: 1"], #weapIconMel[style^="opacity:1"]{
+        content: CSSIMAGE:shoot_cancel;
+        width: 55px;
+        height: 55px;
+        opacity: 1 !important;
+        border-bottom: unset !important;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    /* ---- Match timer ---- */
+    #timerDisplay::before{
+        content: 'Time remaining:';
+        color: white;
+        font-size: 30px;
+        top: 0;
+        font-family: main_font;
+    }
+
+    #timerVal{
+        text-align: end;
+    }
+
+    #timerDisplay{
+        position: fixed;
+        display: flex !important;
+        flex-direction: column;
+        right: 20px;
+        font-size: 15px;
+        background-color: transparent !important;
+    }
+
+    #topLeftHolder{
+        top: 5px;
+    }
+
+    /* ---- Client info ---- */
+    .topRightCounters{
+        position: fixed;
+        left: 15px;
+        top: 230px;
+        text-align: start;
+    }
+
+    .topRightCounters > div{
+        background-color: transparent !important;
+        color:rgba(255, 255, 255, 0.55);
+    }
+
+    .topRightCounters > div::before{
+        font-size: 20px;
+        color:rgba(255, 255, 255, 0.55);
+    }
+
+    .topRightCounters > div > span{
+        color:rgba(255, 255, 255, 0.75);
+    }
+
+    .topRightCounters > .countIcon::before{
+        font-size: 20px;
+    }
+
+    #killCount::before{
+        content: "K:";
+    }
+
+    #deathCount::before{
+        content: "D:";
+    }
+
+    #streakCount::before{
+        content: "KS:";
+    }
+
+    #kdCount::before{
+        content: "KD:";
+    }
+
+    #scoreCount::before{
+        content: "SC:";
+    }
+
+    .debugInfo{
+        position: fixed;
+        left: 475px;
+        top: 20px;
+    }
+
+    #pingDisplay::after{
+        content: " Ping";
+    }
+
+    #ingameFPS{
+        color: rgba(255,255,255,.5) !important;
+    }
+
+    /* ---- Old leaderbread ---- */
+    #leaderDisplay{
+        position: fixed;
+        bottom: 150px;
+        left: 25px;
+        width: 390px;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        padding-left: unset;
+        padding-right: unset;
+        padding: 5px;
+    }
+
+    #leaderContainer > .leaderItem{
+        padding: 2px;
+    }
+
+    #leaderDisplay > #leaderContainer > .leaderItem:nth-child(even){
+        background-color: rgba(71, 71, 71, 0.15);
+    }
+
+    #leaderDisplay> #leaderContainer > .leaderItem:nth-child(odd){
+        background-color: rgba(71, 71, 71, 0.1);
+    }
+
+    /*you*/
+    .leaderItem > .leaderNameM, 
+    .leaderItem > .leaderNameM ~ div,
+    /*friendly*/
+    .leaderItem > .leaderNameF, 
+    .leaderItem > .leaderNameF ~ div,
+    /*enemy*/
+    .leaderItem > .leaderName, 
+    .leaderItem > .leaderName ~ div{
+        margin: 0 0;
+        flex: 1;
+    }
+
+    /*you*/
+    .leaderItem > .leaderNameM{
+        color: var(--mint);
+    }
+
+    /*friendly*/
+    .leaderItem > .leaderNameF{
+        color: white;
+    }
+
+    /*enemy*/
+    .leaderItem > .leaderName{
+        color: var(--tomato);
+    }
+
+    #leaderDisplay > #leaderContainer > .leaderItem > .leaderNameM, 
+    #leaderDisplay > #leaderContainer > .leaderItem > .leaderNameM ~ div{
+        background-color: rgba(31, 156, 117, 0.15) !important;
+    }
+
+    /* ---- Leaderboard ---- */
+    .newLeaderContainer{
+        background-color: transparent !important;
+        padding: unset;
+        padding-top: unset;
+        padding-bottom: unset;
+        border-radius: unset;
+        margin-bottom: unset;
+        flex: 1 1;
+        overflow: hidden;
+    }
+
+    .newLeaderTeam, #newLeaderDisplay{
+        text-align: center;
+        background-color:rgba(0, 0, 0, 0.15);
+        padding: 6px 10px;
+    }
+
+    #newLeaderDisplay{
+        min-height: 280px;
+        width: 900px;
+        backdrop-filter: blur(3px);
+    }
+
+    #newLeaderDisplay[style$="inline-block;"]{
+        display: flex !important;
+    }
+
+    .newLeaderContainer > .newLeaderItem:nth-child(even) > div{
+        background-color: rgba(255,68, 43, 0.1);
+    }
+
+    .newLeaderContainer > .newLeaderItem:nth-child(odd) > div{
+        background-color: rgba(255,68, 43, 0.15);
+    }
+
+    .newLeaderContainer > .newLeaderItem:nth-child(even) > .newLeaderNameF,
+    .newLeaderContainer > .newLeaderItem:nth-child(even) > .newLeaderNameF ~ .newLeaderScore{
+        background-color: rgba(71, 71, 71, 0.1);
+    }
+
+    .newLeaderContainer > .newLeaderItem:nth-child(odd) > .newLeaderNameF,
+    .newLeaderContainer > .newLeaderItem:nth-child(odd) > .newLeaderNameF ~ .newLeaderScore{
+        background-color: rgba(71, 71, 71, 0.15);
+    }
+
+    .newLeaderNameM, .newLeaderNameM ~ .newLeaderScore{
+        background-color: rgba(99, 225, 185, 0.15) !important;
+    }
+
+    .newLeaderScore {
+        flex: 1 1;
+        margin-left: 0;
+        font-size: 23px;
+    }
+
+    .newLeaderNameF, .newLeaderName, .newLeaderNameM{
+        flex: 3 3;
+        font-size: 23px;
+    }
+
+    .newLeaderNameM{
+        color: var(--mint);
+    }
+
+    #newLeaderDisplay > .newLeaderContainer:nth-child(1), #newLeaderDisplay > .newLeaderContainer:nth-child(2){
+        margin-left: 10px;
+    }
+
+    #newLeaderDisplay > .newLeaderContainer:nth-child(2) > .newLeaderItem{
+        display: flex !important;
+        flex-direction: row-reverse;
+    }
+
+    #newLeaderDisplay > .newLeaderContainer:nth-child(2) > .newLeaderItem > .newLeaderNameF,
+    #newLeaderDisplay > .newLeaderContainer:nth-child(2) > .newLeaderItem > .newLeaderNameM,
+    #newLeaderDisplay > .newLeaderContainer:nth-child(2) > .newLeaderItem > .newLeaderName{
+        text-align: right;
+    }
+
+    #newLeaderDisplay > .newLeaderContainer:nth-child(2) > .newLeaderItem > .newLeaderScore{
+        text-align: left;
+    }
+
+    /* ---- Kill card ---- */
+    #killCardHolder{
+        bottom: 160px;
+    }
+
+    #kCName{
+        color: var(--tomato);
+        width: unset !important;
+        text-overflow: unset !important;
+        margin-left: 0;
+    }
+
+    #kCName > span {
+        color: var(--tomato) !important;
+        overflow: visible;
+    }  
+    
+    #kCProfile{
+        position: fixed;
+        image-rendering: optimizeQuality !important;
+        width: 550px;
+        bottom: 170px;
+        height: 100px;
+    }
+
+    #kCProfile[src*="/classes/icon_2"]{
+        content: CSSIMAGE:shipIcon_speedboat;
+    }
+        
+    #kCProfile[src*="/classes/icon_7"]{
+        content: CSSIMAGE:shipIcon_missileboat;
+    }
+
+    #kCProfile[src*="/classes/icon_11"]{
+        content: CSSIMAGE:shipIcon_uboat;
+    }
+
+    #kCProfile[src*="/classes/icon_12"]{
+        content: CSSIMAGE:shipIcon_battleship;
+    }
+
+    #kCProfile{
+        transform: translateX(128px);
+        width: 256px;
+        height: 128px;
+        image-rendering: optimizeQuality;
+    }
+
+    #killCard{
+        height: 150px;
+        width: 550px;
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        display: inline-flex !important;
+        padding: 0 0;
+        padding: 10px;
+    }
+
+    #kCInfo::before{
+        content: "- ";
+        margin-left: 5px;
+    }
+
+    #kCInfo{
+        margin-left: 0;
+        line-height: 37.5px;
+        font-size: 25px;
+    }
+    
+    /* ---- (Custom) Shop menus ---- */
+    #cusDIV2{
+        left: unset !important;
+        font-size: 0 !important;
+        display: block !important;
+        width: 0;
+        height: 0;
+        top: 39.25% !important;
+        right: 80%;
+        background-color: rgba(0, 0, 0, .2);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 60px;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2:not([data-text="0"]){
+        right: -160px !important;
+        width: 350px;
+        height: 500px;
+    }
+
+    #cusDIV2::before{
+        font-size: 30px !important;
+        color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 20px;
+    }
+
+    #cusDIV2::after{
+        font-size: 24px !important;
+        color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 250px;
+        text-align: start;
+        padding: 15px;
+    }
+
+    #interactMsg{
+        font-size: 0px !important;
+        position: absolute !important;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform: unset;
+        justify-content: start;
+        display: block !important;
+    }
+
+    #interactMsg.centerUIB{
+        background: unset;
+    }
+
+    #interactMsg > span:nth-child(2){
+        display: block !important;
+        right: 25px;
+        left: calc(100% - 348.5px) !important;
+        top: 46%;
+        bottom: unset;
+        position: absolute;
+        font-size: 25px !important;
+        text-align: start;
+    }
+
+    #interactMsg > span:nth-child(2)::before{
+        color: white;
+        content: "Price: ";
+    }
+
+    #interactMsg > span:nth-child(2)::after{
+        color: white;
+        content: " points.";
+    }
+
+    #interactMsg > span:nth-child(2)[style="color:#eb5656"]::after, #interactMsg > span:nth-child(2)[style="color:#9eeb56"]::after{
+        left: 0;
+        right: 0;
+        text-align: center;
+        position: absolute;
+        display: block !important;
+        border-radius: 3px;
+    }
+
+    #interactMsg > span:nth-child(2)[style="color:#eb5656"]{
+        color: var(--tomato) !important;
+    }
+
+    #interactMsg > span:nth-child(2)[style="color:#eb5656"]::after{
+        content: "You cant afford this.";
+        color: var(--tomato);
+    }
+
+    #interactMsg > span:nth-child(2)[style="color:#9eeb56"]{
+        color: var(--mint) !important;
+    }
+
+    #interactMsg > span:nth-child(2)[style="color:#9eeb56"]::after{
+        content: "Buy now [Press G]";
+        color: var(--mint);
+    }
+
+        /* ---- Frigate ---- */
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"]{
+            background-image: CSSIMAGE:shipIcon_frigate;
+        }
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"]::before{
+            content: "FRIGATE SUPPORT";
+        }
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"]::after{
+            content: "Will spawn a fleet of A.I. frigates which will fight for you.";
+        }
+
+        /* ---- Repair station ---- */
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="2"]{
+            background-image: CSSIMAGE:shipIcon_battleship;
+        }
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="2"]::before{
+            content: "AIRSTRIKE";
+        }
+
+        #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="2"]::after{
+            content: "A bomber airplane which will blow up all of the objectives.";
+        }
+
+    /* ---- Shop countdown ---- */
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="1"] ~ #cusDIV6:not([data-text^="-"]):not([data-text="0"]),
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="2"] ~ #cusDIV7:not([data-text^="-"]):not([data-text="0"]){
+        left: calc(100% - 350px) !important;
+        right: 15px;
+        top: calc(50% + 15px) !important;
+        display: inline-block !important;
+        font-size: 25px !important;
+        color: var(--tomato) !important;
+        z-index: 1 !important;
+        transform: translate(0, 0) !important;
+        text-align: initial;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="1"] ~ #cusDIV6:not([data-text^="-"]):not([data-text="0"])::before,
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="2"] ~ #cusDIV7:not([data-text^="-"]):not([data-text="0"])::before{
+        content: "Streak on cooldown, ";
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="1"] ~ #cusDIV6:not([data-text^="-"]):not([data-text="0"])::after,
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV2[data-text="1"] ~ #cusDIV4[data-text="2"] ~ #cusDIV7:not([data-text^="-"]):not([data-text="0"])::after{
+        content: " seconds remaining.";
+    }
+
+/* ---- Multikill medals ---- */
+
+    /*Medals*/
+    #customGUIHolder{
+        display: block !important;
+    }
+
+    #cusDIV0, #cusDIV1{
+        font-size: 0 !important;
+        background-repeat: no-repeat;
+        width: 0;
+        height: 0;
+        display: block !important;
+    }
+
+    #cusDIV0::after, #cusDIV1::after{
+        font-size: 0;
+        display: block;
+        width: 500px;
+        color: rgba(0, 0, 0, .4);
+        transform: translate(-185px, 256px);
+        font-weight: bolder;
+        background-image: radial-gradient(center center, circle cover, rgba(0, 0, 0, 0.2), transparent);
+
+        animation-name: medal_text;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    /*medal text colors*/
+
+        /*killstreak*/
+        #cusDIV0::after{
+            color: #4149E0;
+        }
+
+        /*killfeed*/
+        #cusDIV1::after{
+            color: #D8883A;
+        }
+
+    /* ---- Medal animations ---- */
+    #cusDIV1[data-text="2"],
+    #cusDIV1[data-text="4"],
+    #cusDIV1[data-text="6"],
+    #cusDIV1[data-text="8"],
+    #cusDIV1[data-text="10"],
+    #cusDIV1[data-text="12"],
+    #cusDIV1[data-text="14"],
+    #cusDIV1[data-text="16"],
+    #cusDIV1[data-text="18"],
+    #cusDIV1[data-text="20"],
+    #cusDIV1[data-text="22"],
+    #cusDIV1[data-text="24"],
+    #cusDIV1[data-text="26"],
+    #cusDIV1[data-text="28"],
+    #cusDIV1[data-text="30"]{
+        animation-name: medal_animation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    /* ---- Kills ---- */
+
+        /*1 kill*/
+        #cusDIV1[data-text="2"]{
+            background-image: CSSIMAGE:medal_multikill_1;
+        }
+
+        /*2 kills*/
+        #cusDIV1[data-text="4"]{
+            background-image: CSSIMAGE:medal_multikill_2;
+        }
+
+        /*3 kills*/
+        #cusDIV1[data-text="6"]{
+            background-image: CSSIMAGE:medal_multikill_3;
+        }
+
+        /*4 kills*/
+        #cusDIV1[data-text="8"]{
+            background-image: CSSIMAGE:medal_multikill_4;
+        }
+
+        /*5 kills*/
+        #cusDIV1[data-text="10"]{
+            background-image: CSSIMAGE:medal_multikill_5;
+        }
+
+        /*5+ kills*/
+        #cusDIV1[data-text="12"], #cusDIV1[data-text="14"], #cusDIV1[data-text="16"], #cusDIV1[data-text="18"], #cusDIV1[data-text="20"],
+        #cusDIV1[data-text="22"], #cusDIV1[data-text="24"], #cusDIV1[data-text="26"], #cusDIV1[data-text="28"], #cusDIV1[data-text="30"]{
+            background-image: CSSIMAGE:medal_multikill_6;
+        }
+
+    /* ---- Multikill medals text ----*/
+    #customGUIHolder > div:nth-child(2)::after{
+        animation-name: medal_text;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    /* ---- First kill text ----*/
+    #cusDIV1[data-text="2"]::after{
+        content: "SHIP DESTROYED";
+    }
+
+    /* ---- Double kill text ---- */
+    #cusDIV1[data-text="4"]::after{
+        content: "DOUBLE KILL";
+    }
+
+    /* ---- Triple kill text ---- */
+    #cusDIV1[data-text="6"]::after{
+        content: "TRIPLE KILL";
+    }
+
+    /* ---- Quad kill text ---- */
+    #cusDIV1[data-text="8"]::after{
+        content: "FLEET KILL";
+    }
+
+    /* ---- Penta kill text ---- */
+    #cusDIV1[data-text="10"]::after{
+        content: "SCRAPYARD";
+    }
+
+    /* ---- Penta kill+ text ---- */
+    #cusDIV1[data-text="12"]::after, #cusDIV1[data-text="14"]::after, #cusDIV1[data-text="16"]::after, #cusDIV1[data-text="18"]::after, #cusDIV1[data-text="20"]::after,
+    #cusDIV1[data-text="22"]::after, #cusDIV1[data-text="24"]::after, #cusDIV1[data-text="26"]::after, #cusDIV1[data-text="28"]::after, #cusDIV1[data-text="30"]::after{
+        content: "DESTROYER";
+    }
+
+    /* ---- Reset animations ---- */
+    #cusDIV1[data-text="1"], #cusDIV1[data-text="3"], #cusDIV1[data-text="5"], #cusDIV1[data-text="7"], #cusDIV1[data-text="9"], #cusDIV1[data-text="11"], #cusDIV1[data-text="13"],
+    #cusDIV1[data-text="15"], #cusDIV1[data-text="17"], #cusDIV1[data-text="19"], #cusDIV1[data-text="21"], #cusDIV1[data-text="23"], #cusDIV1[data-text="25"], #cusDIV1[data-text="27"], 
+    #cusDIV1[data-text="29"], #cusDIV1[data-text="31"]{
+        display: none;
+    }
+
+    /* ---- Killstreak medals ---- */
+    #cusDIV0, #cusDIV0::after {
+        /*killstreak medals are delayed so they do not interfere with the killfeed medals*/
+        animation-delay: 1.75s !important;
+    }
+
+    /*Killstreak medal animations*/
+    #cusDIV0[data-text="10"],
+    #cusDIV0[data-text="20"],
+    #cusDIV0[data-text="30"],
+    #cusDIV0[data-text="40"],
+    #cusDIV0[data-text="50"],
+    #cusDIV0[data-text="60"], 
+    #cusDIV0[data-text="70"], 
+    #cusDIV0[data-text="80"], 
+    #cusDIV0[data-text="90"],
+    #cusDIV0[data-text="100"],
+    #cusDIV0[data-text="110"], 
+    #cusDIV0[data-text="120"], 
+    #cusDIV0[data-text="130"], 
+    #cusDIV0[data-text="140"]
+    {
+        animation-name: medal_animation;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+    }
+
+    /*5 kills*/
+    #cusDIV0[data-text="10"]{
+        background-image: CSSIMAGE:medal_killstreak_5;
+    }
+
+    /*10 kills*/
+    #cusDIV0[data-text="20"]{
+        background-image: CSSIMAGE:medal_killstreak_10;
+    }
+
+    /*15 kills*/
+    #cusDIV0[data-text="30"]{
+        background-image: CSSIMAGE:medal_killstreak_15;
+    }
+
+    /*20 kills*/
+    #cusDIV0[data-text="40"]{
+        background-image: CSSIMAGE:medal_killstreak_20;
+    }
+
+    /*25 kills*/
+    #cusDIV0[data-text="50"]{
+        background-image: CSSIMAGE:medal_killstreak_25;
+    }
+
+    /*30+ kills*/
+    #cusDIV0[data-text="60"], #cusDIV0[data-text="70"], #cusDIV0[data-text="80"], #cusDIV0[data-text="90"],
+    #cusDIV0[data-text="100"], #cusDIV0[data-text="110"], #cusDIV0[data-text="120"], #cusDIV0[data-text="130"], #cusDIV0[data-text="140"]{
+        background-image: CSSIMAGE:medal_killstreak_30;
+    }
+
+    /* ---- Killstreak medals text ---- */
+
+    /*First kill text*/
+    #cusDIV0[data-text="10"]::after{
+        content: "5 KILLSTREAK";
+    }
+
+    /*Double kill text*/
+    #cusDIV0[data-text="20"]::after{
+        content: "10 KILLSTREAK";
+    }
+
+    /*Triple kill text*/
+    #cusDIV0[data-text="30"]::after{
+        content: "15 KILLSTREAK";
+    }
+
+    /*Quad kill text*/
+    #cusDIV0[data-text="40"]::after{
+        content: "20 KILLSTREAK";
+    }
+
+    /*Penta kill text*/
+    #cusDIV0[data-text="50"]::after{
+        content: "25 KILLSTREAK";
+    }
+
+    /*Penta kill+ text*/
+    #cusDIV0[data-text="60"]::after, #cusDIV0[data-text="70"]::after, #cusDIV0[data-text="80"]::after, #cusDIV0[data-text="90"]::after, #cusDIV0[data-text="100"]::after,
+    #cusDIV0[data-text="110"]::after, #cusDIV0[data-text="120"]::after, #cusDIV0[data-text="130"]::after, #cusDIV0[data-text="140"]::after, #cusDIV0[data-text="150"]::after{
+        content: "UNSTOPPABLE";
+    }
+
+    /* ---- Reset animations ---- */
+    #cusDIV0[data-text="9"], #cusDIV0[data-text="19"], #cusDIV0[data-text="29"], #cusDIV0[data-text="39"], #cusDIV0[data-text="49"], #cusDIV0[data-text="59"], #cusDIV0[data-text="69"],
+    #cusDIV0[data-text="79"], #cusDIV0[data-text="89"], #cusDIV0[data-text="99"], #cusDIV0[data-text="109"], #cusDIV0[data-text="119"], #cusDIV0[data-text="129"], #cusDIV0[data-text="139"], 
+    #cusDIV0[data-text="149"], #cusDIV0[data-text="159"]{
+        display: none;
+    }
+
+    /* ---- Notifications ---- */
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5[data-text="0"]{
+        font-size: 0 !important;
+        animation-name: notif_reset;
+        animation-duration: 1ms;
+        background: none;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5:not([data-text="0"]){
+        display: block !important;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5[data-text="0"]::before{
+        visibility: hidden;
+        background: none;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5{
+        width: 400px;
+        background-size: 25px;
+        font-size: 0 !important;
+        background-repeat-x: repeat;
+        background-repeat-y: no-repeat;
+        background-repeat: repeat no-repeat;
+        background-image: CSSIMAGE:notification_hook;
+        top: calc(20% - 35px) !important;
+        left: calc(100% - (200px + 15px)) !important;
+        font-size: 0 !important;
+        opacity: 0.95 !important;
+        height: 0px;
+        border-bottom: unset;
+
+        animation-name: notif_popup, notif_running;
+        animation-duration: 5s, 10s;
+        animation-iteration-count: 1, infinite;
+        animation-timing-function: linear, linear;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5::after{
+        background-repeat: no-repeat;
+        background-size: 50px;
+        background-position-x: 15px;
+        background-position-y: center;
+        background-image: CSSIMAGE:notification_triangle;
+
+        animation-name: notif_popup_text;
+        animation-duration: 5s;
+        animation-fill-mode: alternate;
+        animation-timing-function: linear;
+        opacity: 0;
+
+        overflow: hidden;
+        color: rgba(0, 0, 0, .7);
+        font-size: 24px !important;
+        height: calc(100px + 12px);
+        transform: translateY(-107px);
+        display: grid;
+        padding-top: 5px;
+        padding-left: 70px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV5::before{
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100px;
+        background-position: center;
+        content: " ";
+        display: block;
+        transform: translate(0, -80px);
+        opacity: 0;
+
+        animation-name: notif_popup_icon;
+        animation-duration: 5s;
+        animation-fill-mode: alternate;
+        animation-timing-function: linear;
+    }
+
+    /* ---- Frigate ---- */
+        /* Icon */
+        #cusDIV5[data-text="4"]::before,
+        #cusDIV5[data-text="3"]::before{
+            background-image: CSSIMAGE:shipIcon_frigate;
+        }
+
+        /* Text */
+            /* Team 2 */
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="4"]::after,
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="3"]::after{
+                content: "Enemy frigate fleet detected";
+            }
+            /* Team 1 */
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="3"]::after,
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="4"]::after{
+                content: "Friendly frigate fleet has arrived";
+            }
+
+        /* Team 2 */
+            /*friendly ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="4"]{
+                background-color: var(--mint);
+                border-bottom: 6px solid #46B583;
+            }
+
+            /*enemy ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="3"]{
+                background-color: var(--tomato);
+                border-bottom: 6px solid #B7301F;
+            }
+            
+        /* Team 1 */
+            /*friendly ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="3"]{
+                background-color: var(--mint);
+                border-bottom: 6px solid #46B583;
+            }
+
+            /*enemy ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="4"]{
+                background-color: var(--tomato);
+                border-bottom: 6px solid #B7301F;
+            }
+
+    /* ---- Carrier ---- */
+        /* Icon */
+        #cusDIV5[data-text="1"]::before,
+        #cusDIV5[data-text="2"]::before{
+            background-image: CSSIMAGE:shipIcon_carrier;
+        }
+
+        /* Text */
+            /* Team 2 */
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="1"]::after,
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="2"]::after{
+                content: "Enemy aircraft carrier detected";
+            }
+            /* Team 1 */
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="2"]::after,
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="1"]::after{
+                content: "Friendly carrier has arrived";
+            }
+
+        /* Team 2 */
+            /*friendly ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="1"]{
+                background-color: var(--mint);
+                border-bottom: 6px solid #46B583;
+            }
+
+            /*enemy ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="2"]{
+                background-color: var(--tomato);
+                border-bottom: 6px solid #B7301F;
+            }
+            
+        /* Team 1 */
+            /*friendly ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="2"]{
+                background-color: var(--mint);
+                border-bottom: 6px solid #46B583;
+            }
+
+            /*enemy ship*/
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="1"]{
+                background-color: var(--tomato);
+                border-bottom: 6px solid #B7301F;
+            }
+
+/* ---- UNIVERSAL UI ---- */
+
+    /* ---- Spectate button ---- */
+    #uiBase.onMenu > #menuHolder > #mMenuHolDef > #menuHider > #spectButton{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        top: unset;
+        align-items: unset;
+        color: rgba(255,255,255,.5);
+        transform: unset;
+    }
+
+    input:checked+.sliderSml{
+        background-color: var(--mint);
+    }
+
+    .sliderSml{
+        background-color:rgba(0, 0, 0, .2);
+        border-radius: 4px;
+    }
+
+    .sliderSml:before{
+        border-radius: 4px;
+    }
+
+    /* ---- Vote and donation buttons ---- */
+
+    div[id^="mapVot"]{
+        position: fixed;
+        right: 15px;
+        bottom: 270px;
+        border-radius: unset;
+    }
+
+    div[id^="mapVot"] > div:first-child{
+        color: var(--mint);
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        margin-top: unset !important;
+        border-radius: unset !important;
+    }
+
+    div[id^="mapVot"] > div:first-child:hover{
+        background-color: rgba(255, 255, 255, 0.200) !important;
+        transform: scale(.91);
+    }
+
+    div[id^="mapVot"] > i{
+        font-size: 0px !important;
+        width: 40px !important;
+        height: 40px !important;
+        background-image: CSSIMAGE:rating_button;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+        margin-left: 2px !important;
+    }
+
+    div[id^="mapVot"] > i[onclick$="-1)"]{
+        transform: rotate(180deg) !important;
+    }
+
+    div[id^="mapVot"] > i[onclick$="-1)"]:hover{
+        transform: rotate(180deg) scale(1.2) !important;
+    }
+
+    /* ---- remove popups ---- */
+    #claimPop{
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        padding: unset;
+        pointer-events: none;
+    }
+
+    #popupBack{
+        background-color: transparent !important;
+    }
+
+    /* ---- Error message ---- */
+    #instructionsUpdate{
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    #instructionsUpdate::before{
+        content: " ";
+        display: block;
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        animation-name: errorMessageAnimation;
+        animation-duration: 2.5s;
+        animation-iteration-count: infinite;
+        width: 175px;
+        height: 225px;
+        position: absolute;
+        transform: translate(-50% , calc(-100% + 5px));
+        left: 50%;
+        z-index: 2;
+    }
+
+    /* ---- Menu buttons ---- */
+    #subLogoButtons{
+        bottom: 46.5px;
+        width: 33.333333%;
+        transform: unset;
+        right: 5px;
+        height: 210.5px !important;
+        left: unset;
+    }
+
+    .button{
+        box-shadow: unset !important;
+        background-color: rgba(0, 0, 0, .3) !important;
+        width: 150px;
+        border-radius: unset;
+        width: calc(50% - 10px);
+    }
+
+    .button.small{
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+        text-shadow: unset !important;
+    }
+
+    .button:hover{
+        background-color: rgba(255, 255, 255, 0.200) !important;
+        box-shadow: unset !important;
+    }
+
+    /* ---- Chat ---- */
+
+    /*make all hidden visible*/
+    #chatList > div[data-tab="1"]{
+        display: block !important;
+    }
+
+    /*add margin in case item gets deleted*/
+    #chatList > div > .chatItem{
+        margin-bottom: 5px !important;
+    }
+
+    /*delete item if not system related and purple*/
+    .chatMsg[style="color:#fc03ec"]{
+        display: none;
+        margin-bottom: unset !important;
+    }
+
+    /*kick, ban and level warning message*/
+    #chatList > div > .chatItem > .chatMsg[style^="color:#ff0000"]{
+        color: var(--tomato) !important;
+    }
+
+    /*give correct colors when enemy/teammate is on a streak*/
+    #chatList > div > .chatItem > .chatMsg > span[style="color:#fff"]{  
+        color: var(--mint) !important;
+    }
+
+    #chatList > div > .chatItem > .chatMsg > span[style="color:#9eeb56"]{  
+        color: #fff !important;
+    }
+
+    #chatList > div > .chatItem > .chatMsg > span[style="color:#eb5656"]{
+        color: var(--tomato) !important;
+    }
+
+    .chatItem{
+        max-width: 100% !important;
+        padding: 0 0;
+        margin-bottom: 0;
+        display: block;
+        background-color: transparent !important;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: unset;
+    }
+
+    /*remove custom chat colors*/
+    .chatItem > *:first-child:first-of-type(span){
+        color: #fff !important;
+    }
+
+    #chatInput{
+        background-color: rgba(0, 0, 0, 0.1) !important;
+        margin-top: unset;
+    }
+
+    /* ---- Chat in-game (unfocused) ---- */
+
+    #uiBase.onGame:not(.onMenu) > #chatUI > #chatHolder{
+        width: 450px;
+        top: 20px !important; /*window becomes top-based instead of bottom-based*/
+        bottom: unset;
+        left: unset;
+        max-width: 450px;
+    }
+
+    #uiBase.onGame:not(.onMenu) > #chatUI > #chatHolder > #chatList{
+        max-width: 450px;
+        width: 450px;
+        overflow: hidden;
+        bottom: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #chatList{
+        padding-top: unset;
+    }
+
+    #uiBase.onMenu > #chatUI > #chatHolder{
+        bottom: 50px !important;
+        width: 33.33333%;
+    }
+
+    /* ---- Chat non-in-game ---- */
+    #chatHolder > div:first-child{
+        max-height: 167px !important;
+        height: 167px;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-right: 2px;
+        border-radius: unset;
+        border: none;
+    }
+
+    #uiBase.onGame > #chatUI > #chatHolder > div{
+        transition: background-color 1s;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+
+    #uiBase.onMenu > #chatUI > #chatHolder > div{
+        transition: background-color 1s;
+        background-color: rgba(0, 0, 0, 0.3) !important;
+    }
+
+    #chatInputHolder{
+        padding: unset;
+        padding-left: 7.5px;
+        margin-top: unset;
+        border-radius: unset;
+        border: unset;
+    }
+
+    #chatInput{
+        background-color: unset !important;
+        margin-left: unset;
+        padding: unset;
+        padding-left: unset;
+        width: 100%;
+        height: 25px;
+    }
+
+    #killFeed > div{
+        background-color: purple;
+    }
+
+    #chatHolder{
+        left: 15px !important;
+    }
+
+    #hiddenClasses > div::before{
+        display: grid;
+        place-items: center;
+        color: white;
+        transform: scale(1) !important;
+        font-size: 24px;
+    }
+
+    #hiddenClasses > div:not(#menuClassPicker14)::after{
+        content: "[SELECT]";
+        display: grid;
+        position: absolute;
+        place-items: center;
+        color: var(--mint);
+        transform: scale(1) translate(40px, 110px) !important;
+        font-size: 21px;
+    }
+
+    #hiddenClasses > div:hover{
+        transform: scale(1.2);
+    }
+
+/* ---- IN MENU ---- */
+
+    /* ---- Ship statistics ---- */
+    #menuClassPicker14{
+        width: 0;
+        height: 0;
+        position: absolute;
+        font-size: 0;
+    }
+
+    #menuClassPicker14::after{
+        pointer-events: none;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: " ";
+        width: 350px;
+        height: 700px;
+        position: fixed;
+        top: 200px;
+        right: 15px;
+    }
+
+        /* ---- ships ---- */
+
+        #menuClassPicker2:hover ~ #menuClassPicker14::after,
+        #menuClassPicker7:hover ~ #menuClassPicker14::after,
+        #menuClassPicker11:hover ~ #menuClassPicker14::after,
+        #menuClassPicker12:hover ~ #menuClassPicker14::after{
+            backdrop-filter: blur(3px);
+        }
+
+        /*Speedboat*/
+        #menuClassPicker2:hover ~ #menuClassPicker14::after{
+            background-image: CSSIMAGE:stats_speedboat;
+        }
+
+        /*Missile boat*/
+        #menuClassPicker7:hover ~ #menuClassPicker14::after{
+            background-image: CSSIMAGE:stats_missileboat;
+        }
+
+        /*Submarine*/
+        #menuClassPicker11:hover ~ #menuClassPicker14::after{
+            background-image: CSSIMAGE:stats_submarine;
+        }
+
+        /*Battleboat*/
+        #menuClassPicker12:hover ~ #menuClassPicker14::after{
+            background-image: CSSIMAGE:stats_battleship;
+        }
+
+    /* ---- Class selection ---- */
+
+        /*Run and gun / Speedboat*/
+        #menuClassPicker2{
+            background-image: CSSIMAGE:shipIcon_speedboat;
+        }
+
+        #menuClassPicker2::before{
+            content: "CORVETTE";
+        }
+
+        /*Rocketeer / Missile boat*/
+        #menuClassPicker7{
+            background-image: CSSIMAGE:shipIcon_missileboat;
+        }
+
+        #menuClassPicker7::before{
+            content: "MISSILE BOAT";
+        }
+
+        /*Commando / Battleship*/
+        #menuClassPicker12{
+            background-image: CSSIMAGE:shipIcon_battleship;
+        }
+
+        #menuClassPicker12::before{
+            content: "BATTLESHIP";
+        }
+
+        /*Bowman / Submarine*/
+        #menuClassPicker11{
+            background-image: CSSIMAGE:shipIcon_uboat;
+        }
+
+        #menuClassPicker11::before{
+            content: "SUBMARINE";
+        }
+
+        /*Classes selection container*/
+        #hiddenClasses{
+            pointer-events: all;
+            bottom: 50px;
+            position: absolute;
+            left: calc(33.33333% + 25px);
+            right: calc(33.33333% + 10px);
+            display: grid !important;
+            height: 207.5px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            overflow-y: auto;
+            overflow-x: hidden;
+            grid-auto-rows: 160px;
+            place-content: center;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /*Available classes*/
+        #menuClassPicker2, #menuClassPicker7,
+        #menuClassPicker11, #menuClassPicker12,
+        #menuClassPicker14{
+           display: block !important;
+           background-repeat: no-repeat;
+           background-position: center;
+           background-size: contain;
+           cursor: pointer;
+        }
+
+    /* ---- Settings button---- */
+
+    /*The settings button does not belong to the bottom menu buttons. This is why you have to manually align it with the rest and apply the other buttons styling to mimic it.*/
+    #menuItemContainer > .menuItem[onclick^="showWindow(1)"]{
+        display: grid;
+    }
+
+    #menuItemContainer{
+        height: 53.5px;
+        top: unset;
+        left: unset;
+        right: 9px;
+        bottom: 143.5px;
+        width: calc((33.333333333% / 2) - 9px);
+    }
+
+    .menuItem{
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+        height: 100%;
+        font-size: 22px;
+        padding: unset;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        flex-grow: unset;
+        background-color: rgba(0, 0, 0, .3) !important;
+        border-radius: 0px;
+    }
+
+    .menuItem:hover {
+        background-color: rgba(255, 255, 255, 0.200) !important;
+        transform: scale(.95);
+    }
+    
+    .menuItem .menuItemTitle{
+        margin-top: unset;
+    }
+
+    .menuItem:hover{
+        border-left: unset;
+    }
+
+    #menuItemContainer, .menuItem{
+        display: block;
+        text-align: center;
+    }
+
+    /*DQ Corp. Has gotten special personal permission to remove a.d.s for this project only. 
+    Copying this code and using this in your own mod will get you into trouble.*/
+    #uiBase > div[id^="aHide"], #endMidHolder > div[class^="endAHolde"], #streamContainer > div > div[align="center"],
+    #streamContainer > div > div[data-freestar-ad]{
+        display: none !important;
+    }
+    
+    /* ---- Menu items ---- */
+    .menuItem, #signedInHeaderBar{
+        background: rgba(0,0,0,.2);
+    }
+    
+    /* ---- Tips ---- */
+
+        /*container positioning*/
+        #tlInfHold{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+        }
+
+        /*container*/
+        #streamContainer{ 
+            position: fixed;
+            border-radius: 0;
+            top: 18px;
+            width: 250px;
+            left: 15px;
+            background-color: rgba(0, 0, 0, 0.3) !important
+        }
+
+        .streamItem{
+            pointer-events: none;
+            cursor: default;
+        }
+
+        /*Swap text twitch*/
+        #streamContainer > .streamItem:nth-child(1) > .twitch{
+            font-size: 0;
+            visibility: hidden;
+        }
+
+        #streamContainer > .streamItem:nth-child(1) > .twitch::before{
+            font-size: 25px;
+            visibility: visible;
+            color: white;
+            content: "Tips:";
+        }
+
+        #streamContainer > .streamItem:nth-child(1) > .twitch::after{
+            margin-left: 5px;
+            font-size: 15px;
+            visibility: visible;
+            color: white;
+            content: "(2/2)";
+        }
+
+        /*Swap text youtube*/
+        #streamContainer > .streamItem:nth-child(1) > .youtube{
+            font-size: 0;
+            visibility: hidden;
+        }
+
+        #streamContainer > .streamItem:nth-child(1) > .youtube::before{
+            font-size: 25px;
+            visibility: visible;
+            color: white;
+            content: "Tips:";
+        }
+
+        #streamContainer > .streamItem:nth-child(1) > .youtube::after{
+            margin-left: 5px;
+            font-size: 15px;
+            visibility: visible;
+            color: white;
+            content: "(1/2)";
+        }
+
+        #streamContainer > div > div[id^="krunkerio"]{
+            display: none !important;
+        }
+
+        #streamContainer > div > div[id^="krunkerio"] ~ div::before,
+        #streamContainer > div > div[id^="krunkerio"] ~ div::after{
+            font-size: 24px;
+            color: white;
+            display: inline-block;
+        }
+
+        #streamContainer > div > div[id^="krunkerio"] ~ div::before{
+            content: "Join our discord community to be part of the discussion: ";
+        }
+
+        #streamContainer > div > div[id^="krunkerio"] ~ div::after{
+            content: "discord.gg/YBnq2um";
+            color: var(--mint);
+        }
+
+        /*tips*/
+        .streamName > .strmViews::after{
+            color: white;
+            font-size: 22px;
+            visibility: visible;
+        }
+
+        .streamName > .strmViews{
+            font-size: 0;
+            visibility: hidden;
+        }
+
+        /*Tip 1*/
+        .streamItem[onclick*="youtube"]:nth-child(2) > .streamName > .strmViews::after{
+            content: "Hit a repair station with your wrench to repair yourself";
+        }
+
+        /*Tip 2*/
+        .streamItem[onclick*="youtube"]:nth-child(3) > .streamName > .strmViews::after{
+            content: "Holding shift, standing still and zooming will greatly improve your accuracy";
+        }   
+        
+        /*Tip 3*/
+        .streamItem[onclick*="Twitch"]:nth-child(2) > .streamName > .strmViews::after{
+            content: "You can buy offensive support in the spawns of some maps";
+        }
+
+        /*Tip 4*/
+        .streamItem[onclick*="Twitch"]:nth-child(3) > .streamName > .strmViews::after{
+            content: "Hold shift with the submarine for a speedboost, it will prevent you from shooting though";
+        }   
+
+        /*Animation frames*/
+        #streamContainer > .streamItem[onclick*="youtube"]:nth-child(2) > .streamName > .strmLink,
+        #streamContainer > .streamItem[onclick*="youtube"]:nth-child(3) > .streamName > .strmLink,
+        #streamContainer > .streamItem[onclick*="Twitch"]:nth-child(2) > .streamName > .strmLink,
+        #streamContainer > .streamItem[onclick*="Twitch"]:nth-child(3) > .streamName > .strmLink{
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        /*Repair station*/
+        #streamContainer > .streamItem[onclick*="youtube"]:nth-child(2) > .streamName > .strmLink{
+            animation-duration: 1s;
+            animation-name: repair_animation;
+        }
+
+        #streamContainer > .streamItem[onclick*="youtube"]:nth-child(3) > .streamName > .strmLink{
+            animation-duration: 3s;
+            animation-name: accuracy_animation;
+        }
+
+        /*Buy station*/
+        #streamContainer > .streamItem[onclick*="Twitch"]:nth-child(2) > .streamName > .strmLink{
+            animation-duration: 2s;
+            animation-name: buyStation_animation;
+        }
+
+        /*Submarine*/
+        #streamContainer > .streamItem[onclick*="Twitch"]:nth-child(3) > .streamName > .strmLink{
+            animation-duration: 1.5s;
+            animation-name: sub_animation;
+        }
+
+        /*setup*/
+        .strmLink{
+            font-size: 0;
+            width: 100%;
+            height: 125px;
+            margin-bottom: 5px;
+            background-image: none;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+    /* ---- Small terms text in bottom left ----*/
+    #termsInfo > .terms{
+        font-size: 13px;
+    }
+
+    .terms{
+        vertical-align: unset;
+    }
+
+    #termsInfo > .verticalSeparatorInline{
+        height: 28px;
+    }
+
+    #termsInfo{
+        background-color: transparent !important;
+        padding: unset;
+        margin-right: unset;
+        right: 10px;
+        bottom: 5px;
+        position: absolute;
+    }
+
+    #uiBase.onMenu > #infoHider > #infoHolder > div[id^="mapInfoHolde"]{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        right: 0;
+        pointer-events: all;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 15px;
+        left: calc(66.66666% + 9px);
+        height: 100px;
+    }
+    
+    /* ---- Cookies and privacy ---- */
+    /*Selects #mapInfoHolder indirectly as it is portected by krunker*/
+
+    #imgFlash ~ #infoHolder > div{
+        align-items: unset;
+        margin-left: 7px;
+        left: 66.666%;
+        top: unset;
+        bottom: 0;
+        height: 170px;
+    }
+
+    .ot-floating-button__front > button{
+        background-image: CSSIMAGE:privacyIcon;
+        background-repeat: no-repeat;
+        background-size: 65px;
+        background-position-y: center;
+        opacity: 1;
+        image-rendering: pixelated;
+    }
+
+    .ot-floating-button__front{
+        box-shadow: unset !important;
+        background-color: transparent !important;
+        width: 70px !important;
+    }
+    
+    #onetrust-consent-sdk > div[title="Manage Preferences"][class="ot-floating-button"]{
+        left: 30px !important;
+        bottom: -9px !important;
+        top: unset !important;
+    }
+    
+    /* ---- Menu fade ---- */
+    #instructionHolder{
+        animation-name: black_fade;
+        animation-duration: .4s;
+        animation-timing-function: linear;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    /* ---- Class preview ----*/
+    #menuClassContainer{
+        top: calc(50% - 230px);
+        bottom: unset;
+        zoom: 250%;
+        right: unset !important;
+        width: 100%; 
+        left: 0;
+        zoom: 165%;
+        background: none;
+        z-index: 1;
+
+        animation-name: ship_bobbing;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    /* ---- Login/Logout styling ---- */
+    #signedInHeaderBar, #signedOutHeaderBar{
+        border-radius: 0px;
+        bottom: 50px;
+        right: 10px;
+        height: 85px;
+        background-color:rgba(0, 0, 0, .3) !important;
+        display: block;
+        width: calc(33.3333% - 7.5px);
+    }
+
+    #signedOutHeaderBar > div.button{
+        color: var(--mint) !important;
+    }
+
+    #menuAccountUsername::before{
+        content: 'Cpt. ';
+        margin-left: 10px;
+        background-color: transparent !important;
+    }
+
+    #menuUsernameContainer{
+        margin-top: 10px;
+        width: 100%;
+        font-size: 29px !important;
+    }
+
+    .button.lgn{
+        background-color: transparent !important;
+        width: 100% !important;
+    }
+
+    .button.lgn:hover{
+        background-color: transparent !important;
+        width: 100% !important;
+    }
+
+    .headerBar{
+        height: 32.5px;
+        padding: unset;
+        top: unset;
+    }
+
+    .headerBarLeft{
+        left: unset;
+    }
+
+    /* ---- Map credits ---- */
+    #mapInfo{
+        right: 90px;
+        font-size: 22px;
+        font-family: 'main_font';
+    }
+
+    #mapInfo::before{
+        content: "Playing DQ Battleboats on ";
+    }
+
+    #curGameInfo{
+        position: fixed;
+        margin-right: 30px;
+        font-size: 0;
+        right: 5px;
+    }
+
+    #curGameInfo > div{
+        color: white !important;
+        font-size: 30px;
+        font-family: main_font;
+    }
+
+    #curGameInfo > div::after{
+        top: 70px;
+        color: white !important;
+        font-size: 30px;
+        font-family: main_font;
+        content: ', made by DQ.';
+    }
+
+    /* ---- Connection/Performance info ---- */
+    #headerRight{
+        background-color: transparent !important;
+    }
+    
+    #menuPingText::after{
+        content: " Ping";
+    }
+
+    #menuFPS{
+        color: rgba(255,255,255,.75) !important;
+    }
+
+    #menuServerInfoContainer{
+        flex-direction: row;
+        margin-right: 5px;
+    }
+
+    #menuPingText, #menuFPSDisplay, #menuPingDisplay{
+        font-size: unset;
+    }
+
+    #menuFPSDisplay::after{
+        content: " | ";
+        color: rgb(255 255 255/12%);
+    }
+
+    #menuRegionLabel{
+        margin-right: 5px;
+        margin-bottom: unset;
+        display: inline-block;
+    }
+
+    #menuRegionLabel::before{
+        content: "| ";
+        color: rgb(255 255 255/12%);
+    }
+
+    .headerBarRight{
+        right: unset;
+        top: unset;
+        left: 67.5px;
+        bottom: 0;
+    }
+
+    /* ---- Endscreen leaderboard ---- */
+
+    /* ---- publishing fix ---- */
+
+    #mapVote{
+        display: none;
+    }
+
+    /* ---- Headers ---- */
+
+    #endTable > tbody > tr > th{
+        background-repeat: no-repeat;
+        background-size: 50px;
+        height: 80px;
+        background-position-y: center;
+        font-size: 0;
+        margin-bottom: 7.5px;
+    }
+
+    #endTable > tbody > tr > th::after{
+        font-size: 15px;
+        transform: translateY(22.5px);
+        position: absolute;
+        text-align: center;
+    }
+
+    /*kills*/
+    #endlb_kills{
+        background-image: CSSIMAGE:endscreen_header_kill;
+    }
+
+    #endlb_kills::after{
+        content: "KILLS";
+    }
+
+    /*assists*/
+    #endlb_assists{
+        background-image: CSSIMAGE:endscreen_header_assist;
+    }
+
+    #endlb_assists::after{
+        content: "ASSISTS";
+    }
+
+    /*death*/
+    #endlb_deaths{
+        background-image: CSSIMAGE:endscreen_header_death;
+    }
+
+    #endlb_deaths::after{
+        content: "DEATHS";
+    }
+
+    /*score*/
+    #endlb_score{
+        background-image: CSSIMAGE:endscreen_header_score;
+    }
+
+    #endlb_score::after{
+        content: "SCORE";
+    }
+
+    /*damage*/
+    #endlb_dmg{
+        background-image: CSSIMAGE:endscreen_header_damage;
+    }
+
+    #endlb_dmg::after{
+        content: "DAMAGE";
+    }
+
+    /*objective*/
+    #endlb_objective{
+        background-image: CSSIMAGE:endscreen_header_objective;
+    }
+
+    #endlb_objective::after{
+        content: "OBJECTIVE";
+    }
+
+    /*Your own name*/
+    .endTableN[style$="rgba(255,255,255,0.6)"]{
+        color: #FFF !important;
+    }
+
+    /*Enemies name*/
+    .endTableN[style$="#eb5656"]{
+        color: var(--tomato) !important;
+    }
+
+    /*Friendlies name*/
+    .endTableN[style$="#fff"]{
+        color: var(--mint) !important;
+    }
+
+    /*Switch tabs*/
+    #tabHolder{
+        justify-content: flex-end;
+        display: flex;
+        grid-template-columns: unset;
+        background-color: unset;
+    }
+
+    #tabHolder > .tabHeader:nth-child(1), 
+    #tabHolder > .tabHeader:nth-child(2){
+        width: 40px;
+        height: 40px;
+        padding: unset;
+        font-size: 0;
+    }
+
+    #tabHolder > .tabHeader:nth-child(1)::after, 
+    #tabHolder > .tabHeader:nth-child(2)::after{
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        content: "i";
+        font-size: 30px;
+        display: grid;
+        place-items: center;
+        pointer-events: none;
+    }
+
+    #tabHolder > .tabHeader:nth-child(2)::after{
+        color: white;
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    #tabHolder > .tabHeader:nth-child(1)::after{
+        color: rgba(0, 0, 0, .8);
+        background-color: white;
+    }
+    
+    #tabHolder > .tabHeader:hover{
+        border-bottom: none;
+    }
+
+    #tabHolder > .tabHeader:hover{
+        border-bottom: none;
+    }
+
+    .endCard{
+        background-color: unset;
+    }
+
+    /*main container*/
+    .tabBody{
+        background-color: unset;
+        pointer-events: none;       
+    }
+
+    #endMidHolder{
+        top: 160px;
+    }
+
+    /*table shell*/
+    #endTable{
+        border-radius: 0px;
+        background-color: unset;
+        padding: unset;
+        width: 100%;
+    }
+
+    /*winstate flag*/
+    #victorySubHolder{
+        top: -120px;
+    }
+
+    #victorySub{
+        content: CSSIMAGE:transparent;
+        height: 450px;
+        width: 450px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: contain;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-duration: 750ms;
+        transform: translateX(25px);
+    }
+
+    /*#victorySub[src="./img/def.png"]{
+        content: CSSIMAGE:wlt_defeated;
+    }
+
+    #victorySub[src="./img/vic.png"]{
+        content: CSSIMAGE:wlt_victory;
+    }
+
+    #victorySub[src="./img/dra.png"]{
+        content: CSSIMAGE:wlt_tied;
+    }*/
+
+    #victorySub[src="./img/def.png"]{
+        animation-name: flag_defeat;
+    }
+
+    #victorySub[src="./img/vic.png"]{
+        animation-name: flag_victory;
+    }
+
+    #victorySub[src="./img/dra.png"]{
+        animation-name: flag_tied;
+    }
+
+    /*end info*/
+    #endInfo{
+        top: 245px;
+    }
+
+    /*give dark background to every row but the header*/
+    #endTable > tbody > tr:not(:first-child):nth-child(odd){
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    #endTable > tbody > tr:not(:first-child):nth-child(even){
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    /*remove underlining*/
+    #endTable > tbody > tr, #endTable > tbody > tr > th{
+        border-bottom: unset;
+    }
+
+    /*Remove useless headers*/
+    #endTable > tbody > tr > th:nth-child(1), #endTable > tbody > tr > th:nth-child(2){
+        visibility: hidden;
+        font-size: 0;
+    }
+
+    /*Remove "Rewards" header*/
+    #endTable > tbody > tr > th:nth-last-child(2), #endTable > tbody > tr > td:nth-last-child(2), 
+    #endTable > tbody > tr > th:last-child, #endTable > tbody > tr > td:last-child{
+        display: none;
+    }
+
+    #endTimer{
+        margin-top: unset;
+        line-height: unset;
+        white-space: nowrap;
+        font-style: unset;
+        color: white;
+        text-transform: lowercase;
+        overflow: hidden;
+    }
+
+    #endTimer::before{
+        content: "Starting the ";
+    }
+
+    #endTimer::after{
+        content: " seconds.";
+    }
+
+    #teamTotal0, #teamTotal1{
+        background-color: unset;
+    }
+
+    #teamTotal0 > .teamTotalScore{
+        color: var(--mint);
+        font-size: 40px;
+    }
+
+    #teamTotal1 > .teamTotalScore{
+        color: var(--tomato);
+        font-size: 40px;
+    }
+
+    #endLayout{
+        display: flex;
+        flex-direction: column;
+        row-gap: unset;
+    }
+
+    .gfSection, .endSection{
+        border-radius: unset;
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+    #gameFundsLayout > .gfSection:first-child > .endtitle{
+        font-size: 28px;
+        margin-bottom: unset;
+    }
+    
+    #combatRecordLayout > #kdLayout ~ .crStat:first-child{
+        font-size: 100px;
+        order: -1;
+        grid-row: 1/3
+    }
+
+    #combatRecordLayout > div{
+        flex: 1;
+    }
+
+    #modeLayout > .modeStatus{
+        font-size: 0px;
+    }
+    
+    #modeLayout > .modeStatus::after{
+        color: var(--mint);
+        content: "You've won!";
+        font-size: 50px;
+    }
+
+    #modeLayout > .modeStatus[style="color:#FF442B;"]::after{
+        color: var(--tomato);
+        content: "You've lost.";
+        font-size: 50px;
+    }
+
+    /* ---- preload images ---- */
+    #newsHolder{
+        /*lots of important due to steam client*/
+        padding: 0 0 !important;
+        position: absolute !important;
+        z-index: -1 !important;
+        max-width: 0 !important;
+        max-height: 0 !important;
+        width: 0 !important; 
+        height: 0 !important; 
+        overflow: hidden !important;
+    }
+    
+    #newsHolder::after{
+        content: CSSIMAGE:shipIcon_speedboat CSSIMAGE:shipIcon_missileboat CSSIMAGE:shipIcon_uboat CSSIMAGE:shipIcon_battleship CSSIMAGE:wlt_defeated CSSIMAGE:wlt_victory CSSIMAGE:wlt_tied CSSIMAGE:buyStation_0001 CSSIMAGE:buyStation_0002 CSSIMAGE:buyStation_0003 CSSIMAGE:buyStation_0004 CSSIMAGE:buyStation_0005 CSSIMAGE:buyStation_0006 CSSIMAGE:buyStation_0007 CSSIMAGE:buyStation_0008 CSSIMAGE:buyStation_0009 CSSIMAGE:buyStation_0010 CSSIMAGE:buyStation_0011 CSSIMAGE:buyStation_0012 CSSIMAGE:buyStation_0013 CSSIMAGE:buyStation_0014 CSSIMAGE:buyStation_0015 CSSIMAGE:buyStation_0016 CSSIMAGE:buyStation_0017 CSSIMAGE:buyStation_0018 CSSIMAGE:buyStation_0019 CSSIMAGE:buyStation_0020 CSSIMAGE:buyStation_0021 CSSIMAGE:buyStation_0022 CSSIMAGE:buyStation_0023 CSSIMAGE:buyStation_0024 CSSIMAGE:buyStation_0025 CSSIMAGE:buyStation_0026 CSSIMAGE:buyStation_0027 CSSIMAGE:buyStation_0028 CSSIMAGE:buyStation_0029 CSSIMAGE:buyStation_0030 CSSIMAGE:buyStation_0031 CSSIMAGE:buyStation_0032 CSSIMAGE:buyStation_0033 CSSIMAGE:buyStation_0034 CSSIMAGE:buyStation_0035 CSSIMAGE:buyStation_0036 CSSIMAGE:buyStation_0037 CSSIMAGE:buyStation_0038 CSSIMAGE:buyStation_0039 CSSIMAGE:subAnimation_0001 CSSIMAGE:subAnimation_0002 CSSIMAGE:subAnimation_0003 CSSIMAGE:subAnimation_0004 CSSIMAGE:subAnimation_0005 CSSIMAGE:subAnimation_0006 CSSIMAGE:subAnimation_0007 CSSIMAGE:subAnimation_0008 CSSIMAGE:subAnimation_0009 CSSIMAGE:subAnimation_0010 CSSIMAGE:subAnimation_0011 CSSIMAGE:subAnimation_0012 CSSIMAGE:repairAnimation_0001 CSSIMAGE:repairAnimation_0002 CSSIMAGE:repairAnimation_0003 CSSIMAGE:repairAnimation_0004 CSSIMAGE:repairAnimation_0005 CSSIMAGE:repairAnimation_0006 CSSIMAGE:accuracyIcon_0001 CSSIMAGE:accuracyIcon_0002 CSSIMAGE:accuracyIcon_0003 CSSIMAGE:accuracyIcon_0004 CSSIMAGE:accuracyIcon_0005 CSSIMAGE:accuracyIcon_0006 CSSIMAGE:accuracyIcon_0007 CSSIMAGE:accuracyIcon_0008 CSSIMAGE:accuracyIcon_0009 CSSIMAGE:accuracyIcon_0010 CSSIMAGE:accuracyIcon_0011 CSSIMAGE:accuracyIcon_0012 CSSIMAGE:accuracyIcon_0013 CSSIMAGE:accuracyIcon_0014 CSSIMAGE:accuracyIcon_0015 CSSIMAGE:accuracyIcon_0016 CSSIMAGE:accuracyIcon_0017 CSSIMAGE:accuracyIcon_0018 CSSIMAGE:accuracyIcon_0019 CSSIMAGE:accuracyIcon_0020 CSSIMAGE:accuracyIcon_0021 CSSIMAGE:accuracyIcon_0022 CSSIMAGE:accuracyIcon_0023 CSSIMAGE:accuracyIcon_0024 CSSIMAGE:accuracyIcon_0025 CSSIMAGE:accuracyIcon_0026 CSSIMAGE:accuracyIcon_0027 CSSIMAGE:accuracyIcon_0028 CSSIMAGE:accuracyIcon_0029 CSSIMAGE:accuracyIcon_0030 CSSIMAGE:accuracyIcon_0031 CSSIMAGE:accuracyIcon_0032 CSSIMAGE:accuracyIcon_0033 CSSIMAGE:accuracyIcon_0034 CSSIMAGE:accuracyIcon_0035 CSSIMAGE:accuracyIcon_0036 CSSIMAGE:accuracyIcon_0037 CSSIMAGE:accuracyIcon_0038 CSSIMAGE:accuracyIcon_0039 CSSIMAGE:accuracyIcon_0040 CSSIMAGE:accuracyIcon_0041 CSSIMAGE:accuracyIcon_0042 CSSIMAGE:accuracyIcon_0043 CSSIMAGE:accuracyIcon_0044 CSSIMAGE:accuracyIcon_0045 CSSIMAGE:weaponReload_0001 CSSIMAGE:weaponReload_0002 CSSIMAGE:weaponReload_0003 CSSIMAGE:weaponReload_0004 CSSIMAGE:weaponReload_0005 CSSIMAGE:weaponReload_0006 CSSIMAGE:weaponReload_0007 CSSIMAGE:weaponReload_0008 CSSIMAGE:weaponReload_0009 CSSIMAGE:weaponReload_0010 CSSIMAGE:weaponReload_0011 CSSIMAGE:weaponReload_0012 CSSIMAGE:weaponReload_0013 CSSIMAGE:weaponReload_0014 CSSIMAGE:weaponReload_0015 CSSIMAGE:error_message0001 CSSIMAGE:error_message0002 CSSIMAGE:error_message0003 CSSIMAGE:error_message0004 CSSIMAGE:error_message0005 CSSIMAGE:error_message0006 CSSIMAGE:error_message0007 CSSIMAGE:error_message0008 CSSIMAGE:error_message0009 CSSIMAGE:error_message0010 CSSIMAGE:error_message0011 CSSIMAGE:error_message0012 CSSIMAGE:error_message0013 CSSIMAGE:error_message0014 CSSIMAGE:error_message0015 CSSIMAGE:error_message0016 CSSIMAGE:error_message0017 CSSIMAGE:error_message0018 CSSIMAGE:error_message0019 CSSIMAGE:error_message0020 CSSIMAGE:error_message0020 CSSIMAGE:endscreen_win_1 CSSIMAGE:endscreen_win_2 CSSIMAGE:endscreen_win_3 CSSIMAGE:endscreen_win_4 CSSIMAGE:endscreen_win_5 CSSIMAGE:endscreen_defeat_1 CSSIMAGE:endscreen_defeat_2 CSSIMAGE:endscreen_defeat_3 CSSIMAGE:endscreen_defeat_4 CSSIMAGE:endscreen_defeat_5 CSSIMAGE:endscreen_tie_1 CSSIMAGE:endscreen_tie_2 CSSIMAGE:endscreen_tie_3 CSSIMAGE:endscreen_tie_4 CSSIMAGE:endscreen_tie_5 !important;
+    }
+
+    /*animations can only be played multiple times when they get rerendered or when another animation has played. This keyframe is here to reset a previous notification animation.*/
+    @keyframes notif_reset{
+        from {}
+        to {}
+    }
+
+    /*Fading text for the popup of notifications*/
+    @keyframes notif_popup_text{
+        from  {opacity: 0;}
+        3%    {opacity: 0;}
+        19.9% {opacity: .6;}
+        20%   {opacity: .6;}
+        80%   {opacity: .6;}
+        80.1% {opacity: .6;}
+        98%   {opacity: 0;}
+        to    {opacity: 0;}
+    }
+
+    /*Styling for the icon of notifications*/
+    @keyframes notif_popup_icon{
+        from  {opacity: 0;}
+        3%    {opacity: 0;}
+        19.9% {opacity: 1;}
+        20%   {opacity: 1;}
+        80%   {opacity: 1;}
+        80.1% {opacity: 1;}
+        98%   {opacity: 0;}
+        to    {opacity: 0;}
+    }
+
+    /*Styling for the popup of notifications*/
+    @keyframes notif_popup{
+        from {height: 0; opacity: 1;}
+        10%  {height: 100px; opacity: 1;}
+        90%  {height: 100px; opacity: 1;}
+        to   {height: 0; opacity: 0;}
+    }
+
+    /*Move the little hooks on top of the notifications*/
+    @keyframes notif_running{
+        from {background-position-x: 100%}
+        to {background-position-x: 0%;}
+    }
+
+    /*The slow fade to transparent black when going into the escape menu*/
+    @keyframes black_fade{
+        from {background-color: transparent;}
+        to {background-color: rgba(0, 0, 0, 0.3);}
+    }
+
+    /*shop popup*/
+    @keyframes interact_popup{
+        from {right: -100%;}
+        to {right: 130px;}
+    }
+
+    /*bobbing of the class preview screen.*/
+    @keyframes ship_bobbing{
+        0% {transform: rotate3d(1, 1, 1, -1deg);}
+        50% {transform: rotate3d(1, 1, 1, 1deg);}
+        100% {transform: rotate3d(1, 1, 1, -1deg);}
+    }
+
+    /*Blinking of the healthbar when you are under 10%*/
+    @keyframes low_health_warn{
+        0%   { background-color: var(--tomato); }
+        50%  { background-color: #ffbdb5; }
+        100% { background-color: var(--tomato); }
+    }
+
+    /*An animation for the buystation tip*/
+    @keyframes buyStation_animation{
+        0%      { background-image: CSSIMAGE:buyStation_0001; }
+        2.6%    { background-image: CSSIMAGE:buyStation_0002; }
+        5.2%    { background-image: CSSIMAGE:buyStation_0003; }
+        7.8%    { background-image: CSSIMAGE:buyStation_0004; }
+        10.4%   { background-image: CSSIMAGE:buyStation_0005; }
+        13%     { background-image: CSSIMAGE:buyStation_0006; }
+        15.6%   { background-image: CSSIMAGE:buyStation_0007; }
+        18.2%   { background-image: CSSIMAGE:buyStation_0008; }
+        20.8%   { background-image: CSSIMAGE:buyStation_0009; }
+        23.4%   { background-image: CSSIMAGE:buyStation_0010; }
+        26%     { background-image: CSSIMAGE:buyStation_0011; }
+        28.6%   { background-image: CSSIMAGE:buyStation_0012; }
+        31.2%   { background-image: CSSIMAGE:buyStation_0013; }
+        33.8%   { background-image: CSSIMAGE:buyStation_0014; }
+        36.4%   { background-image: CSSIMAGE:buyStation_0015; }
+        39%     { background-image: CSSIMAGE:buyStation_0016; }
+        41.6%   { background-image: CSSIMAGE:buyStation_0017; }
+        44.2%   { background-image: CSSIMAGE:buyStation_0018; }
+        46.8%   { background-image: CSSIMAGE:buyStation_0019; }
+        49.4%   { background-image: CSSIMAGE:buyStation_0020; }
+        52%     { background-image: CSSIMAGE:buyStation_0021; }
+        54.6%   { background-image: CSSIMAGE:buyStation_0022; }
+        57.2%   { background-image: CSSIMAGE:buyStation_0023; }
+        59.8%   { background-image: CSSIMAGE:buyStation_0024; }
+        62.4%   { background-image: CSSIMAGE:buyStation_0025; }
+        65%     { background-image: CSSIMAGE:buyStation_0026; }
+        67.6%   { background-image: CSSIMAGE:buyStation_0027; }
+        70.2%   { background-image: CSSIMAGE:buyStation_0028; }
+        72.8%   { background-image: CSSIMAGE:buyStation_0029; }
+        75.4%   { background-image: CSSIMAGE:buyStation_0030; }
+        78%     { background-image: CSSIMAGE:buyStation_0031; }
+        80.6%   { background-image: CSSIMAGE:buyStation_0032; }
+        83.2%   { background-image: CSSIMAGE:buyStation_0033; }
+        85.8%   { background-image: CSSIMAGE:buyStation_0034; }
+        88.4%   { background-image: CSSIMAGE:buyStation_0035; }
+        91%     { background-image: CSSIMAGE:buyStation_0036; }
+        93.6%   { background-image: CSSIMAGE:buyStation_0037; }
+        96.2%   { background-image: CSSIMAGE:buyStation_0038; }
+        100%    { background-image: CSSIMAGE:buyStation_0039; }
+    }
+
+    /*An animation for the submarine tip*/
+    @keyframes sub_animation{
+        0%   { background-image: CSSIMAGE:subAnimation_0001; }
+        9%   { background-image: CSSIMAGE:subAnimation_0002; }
+        18%  { background-image: CSSIMAGE:subAnimation_0003; }
+        27%  { background-image: CSSIMAGE:subAnimation_0004; }
+        36%  { background-image: CSSIMAGE:subAnimation_0005; }
+        45%  { background-image: CSSIMAGE:subAnimation_0006; }
+        54%  { background-image: CSSIMAGE:subAnimation_0007; }
+        63%  { background-image: CSSIMAGE:subAnimation_0008; }
+        72%  { background-image: CSSIMAGE:subAnimation_0009; }
+        81%  { background-image: CSSIMAGE:subAnimation_0010; }
+        90%  { background-image: CSSIMAGE:subAnimation_0011; }
+        100% { background-image: CSSIMAGE:subAnimation_0012; }
+    }
+
+    /*An animation for the repair tip*/
+    @keyframes repair_animation{
+        0%   { background-image: CSSIMAGE:repairAnimation_0001; }
+        20%  { background-image: CSSIMAGE:repairAnimation_0002; }
+        40%  { background-image: CSSIMAGE:repairAnimation_0003; }
+        60%  { background-image: CSSIMAGE:repairAnimation_0004; }
+        80%  { background-image: CSSIMAGE:repairAnimation_0005; }
+        100% { background-image: CSSIMAGE:repairAnimation_0006; }
+    }
+
+    /*An animation for the accuracy tip*/
+    @keyframes accuracy_animation{
+        0%          { background-image: CSSIMAGE:accuracyIcon_0001; }
+        2.27%       { background-image: CSSIMAGE:accuracyIcon_0002; }
+        4.54%       { background-image: CSSIMAGE:accuracyIcon_0003; }
+        6.81%       { background-image: CSSIMAGE:accuracyIcon_0004; }
+        9.08%       { background-image: CSSIMAGE:accuracyIcon_0005; }
+        11.35%      { background-image: CSSIMAGE:accuracyIcon_0006; }
+        13.62%      { background-image: CSSIMAGE:accuracyIcon_0007; }
+        15.89%      { background-image: CSSIMAGE:accuracyIcon_0008; }
+        18.16%      { background-image: CSSIMAGE:accuracyIcon_0009; }
+        20.43%      { background-image: CSSIMAGE:accuracyIcon_0010; }
+        22.7%       { background-image: CSSIMAGE:accuracyIcon_0011; }
+        24.97%      { background-image: CSSIMAGE:accuracyIcon_0012; }
+        27.24%      { background-image: CSSIMAGE:accuracyIcon_0013; }
+        29.51%      { background-image: CSSIMAGE:accuracyIcon_0014; }
+        31.78%      { background-image: CSSIMAGE:accuracyIcon_0015; }
+        34.05%      { background-image: CSSIMAGE:accuracyIcon_0016; }
+        36.32%      { background-image: CSSIMAGE:accuracyIcon_0017; }
+        38.59%      { background-image: CSSIMAGE:accuracyIcon_0018; }
+        40.86%      { background-image: CSSIMAGE:accuracyIcon_0019; }
+        43.13%      { background-image: CSSIMAGE:accuracyIcon_0020; }
+        45.4%       { background-image: CSSIMAGE:accuracyIcon_0021; }
+        47.67%      { background-image: CSSIMAGE:accuracyIcon_0022; }
+        49.94%      { background-image: CSSIMAGE:accuracyIcon_0023; }
+        52.21%      { background-image: CSSIMAGE:accuracyIcon_0024; }
+        54.48%      { background-image: CSSIMAGE:accuracyIcon_0025; }
+        56.75%      { background-image: CSSIMAGE:accuracyIcon_0026; }
+        59.02%      { background-image: CSSIMAGE:accuracyIcon_0027; }
+        61.29%      { background-image: CSSIMAGE:accuracyIcon_0028; }
+        63.56%      { background-image: CSSIMAGE:accuracyIcon_0029; }
+        65.83%      { background-image: CSSIMAGE:accuracyIcon_0030; }
+        68.1%       { background-image: CSSIMAGE:accuracyIcon_0031; }
+        70.37%      { background-image: CSSIMAGE:accuracyIcon_0032; }
+        72.64%      { background-image: CSSIMAGE:accuracyIcon_0033; }
+        74.91%      { background-image: CSSIMAGE:accuracyIcon_0034; }
+        77.18%      { background-image: CSSIMAGE:accuracyIcon_0035; }
+        79.45%      { background-image: CSSIMAGE:accuracyIcon_0036; }
+        81.72%      { background-image: CSSIMAGE:accuracyIcon_0037; }
+        83.99%      { background-image: CSSIMAGE:accuracyIcon_0038; }
+        86.26%      { background-image: CSSIMAGE:accuracyIcon_0039; }
+        88.53%      { background-image: CSSIMAGE:accuracyIcon_0040; }
+        90.8%       { background-image: CSSIMAGE:accuracyIcon_0041; }
+        93.07%      { background-image: CSSIMAGE:accuracyIcon_0042; }
+        95.34%      { background-image: CSSIMAGE:accuracyIcon_0043; }
+        98%         { background-image: CSSIMAGE:accuracyIcon_0044; }        
+        100%        { background-image: CSSIMAGE:accuracyIcon_0045; }
+    }
+    
+    /*A special animation for wrench kills in the killfeed*/
+    @keyframes repair_kill{
+        0%      {content: CSSIMAGE:weapon_0_knife_f1;}
+        50%     {content: CSSIMAGE:weapon_0_knife_f2;}
+        100%     {content: CSSIMAGE:weapon_0_knife_f3;}
+    }
+
+    /*Animations for the medals*/
+    @keyframes medal_animation{
+        0%   { transform: translateX(calc(-250px - 65px)) scale(0.5);  opacity: 0; width: 128px; height: 256px;}
+        1%   { transform: translateX(calc(-250px - 65px)) scale(0.5);  opacity: 0; width: 128px; height: 256px;}
+        5%   { transform: translateX(calc(-225px - 65px)) scale(0.55); opacity: 1; width: 128px; height: 256px;}
+        15%  { transform: translateX(calc(0px - 65px))    scale(1.4);  opacity: 1; width: 128px; height: 256px;}
+        33%  { transform: translateX(calc(0px - 65px))    scale(1);    opacity: 1; width: 128px; height: 256px;}
+        90%  { transform: translateX(calc(0px - 65px))    scale(1);    opacity: 1; width: 128px; height: 256px;}  
+        100% { transform: translateX(calc(250px - 65px))  scale(0.2);  opacity: 0; width: 128px; height: 256px;}
+    }
+
+    /*Animation for the medals text*/
+    @keyframes medal_text{
+        from {font-size: 22px;}
+        to {font-size: 22px;}
+    }
+
+    /*The reload icon that shows when reloading*/
+    @keyframes reloadIcon_animation{
+        0%      { background-image: CSSIMAGE:weaponReload_0001; }
+        6.6%    { background-image: CSSIMAGE:weaponReload_0002; }
+        13.3%   { background-image: CSSIMAGE:weaponReload_0003; }
+        19.9%   { background-image: CSSIMAGE:weaponReload_0004; }
+        26.6%   { background-image: CSSIMAGE:weaponReload_0005; }
+        33.3%   { background-image: CSSIMAGE:weaponReload_0006; }
+        49.9%   { background-image: CSSIMAGE:weaponReload_0007; }
+        46.6%   { background-image: CSSIMAGE:weaponReload_0008; }
+        53.3%   { background-image: CSSIMAGE:weaponReload_0009; }
+        59.9%   { background-image: CSSIMAGE:weaponReload_0010; }
+        66.6%   { background-image: CSSIMAGE:weaponReload_0011; }
+        73.3%   { background-image: CSSIMAGE:weaponReload_0012; }
+        79.9%   { background-image: CSSIMAGE:weaponReload_0013; }
+        86.66%  { background-image: CSSIMAGE:weaponReload_0014; }
+        100%    { background-image: CSSIMAGE:weaponReload_0015; }  
+    }
+
+    /*Error message shaking*/
+    @keyframes errorMessageAnimation{
+        0%    { background-image: CSSIMAGE:error_message0001; }
+        5%    { background-image: CSSIMAGE:error_message0002; }
+        10%   { background-image: CSSIMAGE:error_message0003; }
+        15%   { background-image: CSSIMAGE:error_message0004; }
+        20%   { background-image: CSSIMAGE:error_message0005; }
+        25%   { background-image: CSSIMAGE:error_message0006; }
+        30%   { background-image: CSSIMAGE:error_message0007; }
+        35%   { background-image: CSSIMAGE:error_message0008; }
+        40%   { background-image: CSSIMAGE:error_message0009; }
+        45%   { background-image: CSSIMAGE:error_message0010; }
+        50%   { background-image: CSSIMAGE:error_message0011; }
+        55%   { background-image: CSSIMAGE:error_message0012; }
+        60%   { background-image: CSSIMAGE:error_message0013; }
+        65%   { background-image: CSSIMAGE:error_message0014; }
+        70%   { background-image: CSSIMAGE:error_message0015; }  
+        75%   { background-image: CSSIMAGE:error_message0016; }
+        80%   { background-image: CSSIMAGE:error_message0017; }
+        85%   { background-image: CSSIMAGE:error_message0018; }
+        90%   { background-image: CSSIMAGE:error_message0019; }
+        95%   { background-image: CSSIMAGE:error_message0020; }
+        100%  { background-image: CSSIMAGE:error_message0020; }
+    }
+
+    @keyframes flag_victory{
+        0%   { background-image: CSSIMAGE:endscreen_win_1; }
+        25%  { background-image: CSSIMAGE:endscreen_win_2; }
+        50%  { background-image: CSSIMAGE:endscreen_win_3; }
+        75%  { background-image: CSSIMAGE:endscreen_win_4; }
+        100% { background-image: CSSIMAGE:endscreen_win_5; }
+    }
+
+    @keyframes flag_defeat{
+        0%   { background-image: CSSIMAGE:endscreen_defeat_1; }
+        25%  { background-image: CSSIMAGE:endscreen_defeat_2; }
+        50%  { background-image: CSSIMAGE:endscreen_defeat_3; }
+        75%  { background-image: CSSIMAGE:endscreen_defeat_4; }
+        100% { background-image: CSSIMAGE:endscreen_defeat_5; }
+    }
+
+    @keyframes flag_tied{
+        0%   { background-image: CSSIMAGE:endscreen_tie_1; }
+        25%  { background-image: CSSIMAGE:endscreen_tie_2; }
+        50%  { background-image: CSSIMAGE:endscreen_tie_3; }
+        75%  { background-image: CSSIMAGE:endscreen_tie_4; }
+        100% { background-image: CSSIMAGE:endscreen_tie_5; }
+    }
+
+/* All hail DQ */

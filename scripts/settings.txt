@@ -1,0 +1,19 @@
+fov, 75
+showSpdLines, 0
+
+freeKRPop, false
+showUnboxings, false
+showMedals, false
+showPfp, false
+showSpeed, false
+useDamageOverlay, false
+
+showExplo, true
+showHands, true
+defaultSkins, true
+
+hitColor, #FF442B
+healthColT, #63FFB9
+healthColE, #FF442B
+dmgColor, #FF442B
+scoreColor, #FEFEFE
