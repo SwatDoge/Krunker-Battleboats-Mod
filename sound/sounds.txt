@@ -1,0 +1,6 @@
+weapon_3 = pistol
+weapon_4 = smg
+weapon_9 = rocket
+weapon_11 = deagle
+weapon_14 = crossbow
+weapon_15 = famas

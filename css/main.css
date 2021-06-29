@@ -109,6 +109,11 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     display: none;
 }
 
+/*spectate*/
+.specLevelBox, .specNum{
+    display: none;
+}
+
 /* ----REMOVAL IMPORTANT---- */
 
 /*ingame*/
@@ -1550,6 +1555,97 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
                 border-bottom: 6px solid #B7301F;
             }
 
+/* ---- SPECTATE UI ---- */
+#specScoreTm0{
+    background-color: var(--mint);
+}
+
+#specScoreTm1{
+    background-color: var(--tomato);
+}
+
+.specPlayerIcon{
+    width: 100px;
+    height: 50px;
+    image-rendering: auto;
+}
+
+#specTeam0, #specTeam1{
+    width: 400px;
+}
+
+#specTeam0 > div > img[src*="textures/classes/icon_7.png"], 
+#specTeam1 > div > img[src*="textures/classes/icon_7.png"],
+.spectPIcon[src*="textures/classes/icon_7.png"]{
+    content: CSSIMAGE:shipIcon_missileboat;
+}
+
+#specTeam0 > div > img[src*="textures/classes/icon_2.png"], 
+#specTeam1 > div > img[src*="textures/classes/icon_2.png"],
+.spectPIcon[src*="textures/classes/icon_2.png"]{
+    content: CSSIMAGE:shipIcon_speedboat;
+}
+
+#specTeam0 > div > img[src*="textures/classes/icon_11.png"], 
+#specTeam1 > div > img[src*="textures/classes/icon_11.png"],
+.spectPIcon[src*="textures/classes/icon_11.png"]{
+    content: CSSIMAGE:shipIcon_uboat;
+}
+
+#specTeam0 > div > img[src*="textures/classes/icon_12.png"], 
+#specTeam1 > div > img[src*="textures/classes/icon_12.png"],
+.spectPIcon[src*="textures/classes/icon_12.png"]{
+    content: CSSIMAGE:shipIcon_battleship;
+}
+
+.specPlayerHolder0, .specPlayerHolder1{
+    width: 100px;
+    display: block;
+    height: 50px;
+}
+
+.specPlayerIcon{
+    width: inherit;
+    height: inherit;
+}
+
+.specPlayerHolder0 > .specPlayerFlag, 
+.specPlayerHolder1 > .specPlayerFlag{
+    right: 0px;
+    left: unset;
+}
+
+#specStats, #specNames{
+    bottom: 15px;
+    top: unset;
+}
+
+.spectPIcon{
+    width: 150px;
+    background-color: unset;
+}
+
+.specFlag{
+    left: 110px;
+}
+
+#spectHPV{
+    left: 235px;
+    top: 47px;
+}
+
+#spectHPBI{
+    background-color: var(--mint) !important;
+}
+
+#spectHPB{
+    width: 185px;
+}
+
+.specPHead{
+    margin-left: 10px;
+}
+
 /* ---- UNIVERSAL UI ---- */
 
     /* ---- Spectate button ---- */
@@ -1590,7 +1686,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     div[id^="mapVot"] > div:first-child{
         color: var(--mint);
-        font-size: 25px;
+        font-size: 30px;
         background-color: rgba(0, 0, 0, 0.2) !important;
         margin-top: unset !important;
         border-radius: unset !important;
@@ -1603,20 +1699,19 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     div[id^="mapVot"] > i{
         font-size: 0px !important;
-        width: 40px !important;
-        height: 40px !important;
-        background-image: CSSIMAGE:rating_button;
+        width: 65px !important;
+        height: 65px !important;
         background-repeat: no-repeat !important;
         background-size: contain !important;
         margin-left: 2px !important;
     }
 
     div[id^="mapVot"] > i[onclick$="-1)"]{
-        transform: rotate(180deg) !important;
+        background-image: CSSIMAGE:rating_down;
     }
 
-    div[id^="mapVot"] > i[onclick$="-1)"]:hover{
-        transform: rotate(180deg) scale(1.2) !important;
+    div[id^="mapVot"] > i[onclick$="1)"]:not([onclick$="-1)"]){
+        background-image: CSSIMAGE:rating_up;
     }
 
     /* ---- remove popups ---- */
@@ -1647,10 +1742,10 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         animation-name: errorMessageAnimation;
         animation-duration: 2.5s;
         animation-iteration-count: infinite;
-        width: 175px;
+        width: 225px;
         height: 225px;
         position: absolute;
-        transform: translate(-50% , calc(-100% + 5px));
+        transform: translate(195px, 0px);
         left: 50%;
         z-index: 2;
     }
@@ -2407,18 +2502,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     #endTable > tbody > tr > th{
         background-repeat: no-repeat;
-        background-size: 50px;
+        background-size: 90px;
         height: 80px;
-        background-position-y: center;
+        background-position-y: bottom;
         font-size: 0;
         margin-bottom: 7.5px;
-    }
-
-    #endTable > tbody > tr > th::after{
-        font-size: 15px;
-        transform: translateY(22.5px);
-        position: absolute;
-        text-align: center;
+        overflow: unset;
     }
 
     /*kills*/
@@ -2426,17 +2515,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         background-image: CSSIMAGE:endscreen_header_kill;
     }
 
-    #endlb_kills::after{
-        content: "KILLS";
-    }
-
     /*assists*/
     #endlb_assists{
         background-image: CSSIMAGE:endscreen_header_assist;
-    }
-
-    #endlb_assists::after{
-        content: "ASSISTS";
     }
 
     /*death*/
@@ -2444,35 +2525,18 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         background-image: CSSIMAGE:endscreen_header_death;
     }
 
-    #endlb_deaths::after{
-        content: "DEATHS";
-    }
-
     /*score*/
     #endlb_score{
         background-image: CSSIMAGE:endscreen_header_score;
-    }
-
-    #endlb_score::after{
-        content: "SCORE";
     }
 
     /*damage*/
     #endlb_dmg{
         background-image: CSSIMAGE:endscreen_header_damage;
     }
-
-    #endlb_dmg::after{
-        content: "DAMAGE";
-    }
-
     /*objective*/
     #endlb_objective{
         background-image: CSSIMAGE:endscreen_header_objective;
-    }
-
-    #endlb_objective::after{
-        content: "OBJECTIVE";
     }
 
     /*Your own name*/
@@ -2542,8 +2606,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     /*main container*/
     .tabBody{
-        background-color: unset;
-        pointer-events: none;       
+        background-color: unset;   
     }
 
     #endMidHolder{
@@ -2602,7 +2665,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     /*end info*/
     #endInfo{
-        top: 245px;
+        top: 190px;
     }
 
     /*give dark background to every row but the header*/
