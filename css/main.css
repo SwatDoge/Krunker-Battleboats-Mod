@@ -576,7 +576,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     .kfMsg > img[src^="https://assets.krunker.io/textures/melee/icon_0"],
     .chatMsg > img[src^="https://assets.krunker.io/textures/melee/icon_0"]{
         animation-name: repair_kill;
-        animation-duration: .32.5s;
+        animation-duration: .32s;
         animation-timing-function: linear;
         animation-direction: alternate;
         animation-iteration-count: infinite;
@@ -1037,6 +1037,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         left: 0;
         right: 0;
         top: 0;
+        border: none;
         bottom: 0;
         transform: unset;
         justify-content: start;
@@ -1473,6 +1474,29 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         }
 
         /* Text */
+
+            /* Spectator */
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="0"] ~ #cusDIV5[data-text="1"]::after{
+                content: "Team 2 is getting backup from a carrier";
+            }
+
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="0"] ~ #cusDIV5[data-text="2"]::after{
+                content: "Team 1 is getting backup from a carrier";
+            }
+
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="0"] ~ #cusDIV5[data-text="4"]::after{
+                content: "Team 2 bought a frigate fleet";
+            }
+            
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="0"] ~ #cusDIV5[data-text="3"]::after{
+                content: "Team 1 bought a frigate fleet";   
+            }
+
+            #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="0"] ~ #cusDIV5::after{
+                background-color: rgb(230, 230, 230);
+                border-bottom: rgba(0, 0, 0, .2);
+            }
+
             /* Team 2 */
             #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="1"] ~ #cusDIV5[data-text="4"]::after,
             #uiBase.onGame > #gameUI > #customGUIHolder > #cusDIV4[data-text="2"] ~ #cusDIV5[data-text="3"]::after{
@@ -1649,7 +1673,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 /* ---- UNIVERSAL UI ---- */
 
     /* ---- Spectate button ---- */
-    #uiBase.onMenu > #menuHolder > #mMenuHolDef > #menuHider > #spectButton{
+    #uiBase.onMenu > #fullMenHider > #menuHolder > #mMenuHolDef > #menuHider > #spectButton{
         display: flex;
         justify-content: center;
         position: absolute;
@@ -1838,7 +1862,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 
     /* ---- Chat in-game (unfocused) ---- */
 
-    #uiBase.onGame:not(.onMenu) > #chatUI > #chatHolder{
+    #uiBase.onGame:not(.onMenu) > #fullMenHider > #chatUI > #chatHolder{
         width: 450px;
         top: 20px !important; /*window becomes top-based instead of bottom-based*/
         bottom: unset;
@@ -1846,7 +1870,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         max-width: 450px;
     }
 
-    #uiBase.onGame:not(.onMenu) > #chatUI > #chatHolder > #chatList{
+    #uiBase.onGame:not(.onMenu) > #fullMenHider > #chatUI > #chatHolder > #chatList{
         max-width: 450px;
         width: 450px;
         overflow: hidden;
@@ -1858,7 +1882,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         padding-top: unset;
     }
 
-    #uiBase.onMenu > #chatUI > #chatHolder{
+    #uiBase.onMenu > #fullMenHider > #chatUI > #chatHolder{
         bottom: 50px !important;
         width: 33.33333%;
     }
@@ -1874,12 +1898,12 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         border: none;
     }
 
-    #uiBase.onGame > #chatUI > #chatHolder > div{
+    #uiBase.onGame > #fullMenHider > #chatUI > #chatHolder > div{
         transition: background-color 1s;
         background-color: rgba(0, 0, 0, 0.2) !important;
     }
 
-    #uiBase.onMenu > #chatUI > #chatHolder > div{
+    #uiBase.onMenu > #fullMenHider > #chatUI > #chatHolder > div{
         transition: background-color 1s;
         background-color: rgba(0, 0, 0, 0.3) !important;
     }
@@ -2294,7 +2318,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
         position: absolute;
     }
 
-    #uiBase.onMenu > #infoHider > #infoHolder > div[id^="mapInfoHolde"]{
+    #uiBase.onMenu > #fullMenHider > #infoHider > #infoHolder > div[id^="mapInfoHolde"]{
         position: absolute;
         bottom: 0;
         display: flex;
@@ -2975,9 +2999,9 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
     
     /*A special animation for wrench kills in the killfeed*/
     @keyframes repair_kill{
-        0%      {content: CSSIMAGE:weapon_0_knife_f1;}
-        50%     {content: CSSIMAGE:weapon_0_knife_f2;}
-        100%     {content: CSSIMAGE:weapon_0_knife_f3;}
+        0%      { content: CSSIMAGE:weapon_0_knife_f1; }
+        50%     { content: CSSIMAGE:weapon_0_knife_f2; }
+        100%    { content: CSSIMAGE:weapon_0_knife_f3; }
     }
 
     /*Animations for the medals*/
